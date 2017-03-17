@@ -1,0 +1,71 @@
+* { padding: 0;
+	margin: 0;
+	font: 14px "Microsoft YaHei",serif;
+    background: #eee;
+}
+img {
+	width: 80px;
+	height: 80px;
+}
+.all {
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	top: 20px;
+	height: 460px;
+	border: 1px solid #999;
+	min-width: 440px;
+}
+.team-name {
+	position: relative;
+	left: 20px;
+	top: 20px;
+	width: 200px;
+	height: 120px;
+	border: 1px solid #999;
+	background: #fff;
+}
+.team-name img {
+	padding: 20px;
+	background: #fff;
+}
+.team-name p {
+	float: right;
+	width: 60px;
+	padding: 20px 20px 0 0;
+	word-break: break-all;
+	background: #fff;
+}
+.dec {
+	position: absolute;
+	top: 20px;
+	left: 240px;
+	right: 160px;
+	bottom: 60px; 
+	padding: 20px;
+	border: 1px solid #999;
+	background: #fff;
+	overflow: hidden;
+}
+.dec p {
+	background: #fff;
+}
+.personal-name {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 120px;
+	border: 1px solid #999;
+	background: #fff;
+}
+.personal-name ul {
+	background: #fff;
+}
+.personal-name li {
+	width: 80px;
+	height: 80px;
+	padding: 0px;
+	margin: 20px;
+	list-style-type: none;
+}
+

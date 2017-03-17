@@ -1,0 +1,139 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font: normal 14px "Microsoft YaHei",serif;
+	background-color: #141313;
+}
+img {
+	width: 30%;
+	height: 20%;
+}
+.all {
+	position: relative;
+	height: 100%;
+	margin: 0 40px;
+	background: #eee;
+	min-width: 728px;
+}
+.nav {
+    position: relative;
+    width: 100%;
+	height: 70px;
+	background: #2c2c2c;
+}
+.nav h1 {
+	float: left;
+	margin: 20px;
+	line-height: 30px;
+	color: #fff;
+}
+.nav ul {
+	float: right;
+	margin-top: 25px;	
+	list-style-type: disc;
+	line-height: 20px;
+}
+.nav li {
+	float: left;
+	margin: auto 20px;
+}
+.nav a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+.nav a:hover {
+	color: #fff;
+	opacity: 0.4;
+}
+.first {
+	padding: 10px;
+	margin: 20px 410px 10px 20px;
+	border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 1px 1px #eee;
+    background: #fff;
+}
+.second {
+	padding: 10px;
+	margin: 20px 410px 10px 20px;
+	border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 1px 1px #eee;
+    background: #fff;
+}
+.image {
+    padding: 10px;
+	margin: 20px 410px 10px 20px;
+	border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px #eee;
+    background: #fff;
+}
+.image h2 {
+	clear: both;
+}
+.image li {
+	float: left;
+	margin: 10px;
+	border: 1px solid #eee;
+	list-style-type: none;
+}
+.image p {
+	clear: both;
+	text-align: center;
+}
+.image img {
+	width: 80px;
+	height: 60px;
+	float: left;
+	margin: 10px;
+}
+.ta {
+	padding: 10px;
+	margin: 20px 410px 20px 20px;
+	border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 1px 1px #eee;
+    background: #fff;
+}
+ol {
+	padding-left: 1em;
+}
+.aside {
+	position: absolute;
+	top: 90px;
+	right: 20px;
+	width: 350px;
+	padding: 10px;
+	text-align: center;
+	background: #fff;
+	border-radius: 10px;
+}
+.align {
+	padding-right: 60px;
+	text-align: right;
+}
+.aside p {
+	margin: 10px;
+}
+button {
+	width: 310px;
+	padding: 10px;
+	margin: 10px 20px;
+	border-radius: 10px;
+	color: #fff;
+	background: #575EE9;
+} 
+.footer {
+	height: 70px;
+	text-align: center;
+	background: #000;
+}
+.footer p {
+	padding-top: 19px;
+	color: #fff;
+}

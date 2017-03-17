@@ -1,0 +1,388 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #000;
+}
+.all {
+	width: 892px;
+	height: 1386px;
+	margin: 0 auto;
+	padding: 0 44px;
+	background: #fff;
+}
+.header {
+	border-bottom: 2px solid #7d7979;
+}
+.header p {
+	float: right;
+    margin-top: 40px;
+	font: 12px "黑体",serif;
+	color: #d45d5c;
+}
+.aa {
+	width: 110px;
+	height: 61px;
+	background-color: #ce4343;
+}
+.aa a {
+    display: block;
+    padding: 40px 5px;
+	font: 12px "黑体",serif;
+	text-decoration: none;
+	color: #fff;
+}
+.first-part {
+	margin: 20px 0;
+}
+.aside-top {
+	width: 203px;
+	height: 301px;
+	padding: 10px 0;
+	margin: 0;
+	float: right;
+	border-top: 2px solid #cc8091;
+}
+.aside-top p {
+	margin: 0;
+	padding: 0;
+	font: small-caps 24px "Microsoft YaHei",serif;
+	text-decoration: underline;
+}
+.aside-top .min {
+	font: 12px "楷体",serif;
+	line-height: 10px;
+	text-decoration: none;
+	color: #676767;
+}
+.seven {
+	margin: 0;
+	padding: 0;
+	text-indent: -17px;
+	font:  italic 116px "Microsoft YaHei",serif;
+	color: #75b86b;
+}
+.three {
+	font: 21px "Microsoft YaHei",serif;
+	color: #cc8091;
+}
+.three span {
+	float: left;
+	margin: 0 2px;
+	font-size: 55px;
+}
+.three p {
+	width: 100px;
+	display: inline-block;
+	margin-top: 15px;
+	overflow: hidden;
+}
+span.sel {
+      font-size: 12px;
+}
+span.wwww {
+      font-size: 21px;
+}
+.big-img {
+	width: 641px;
+	height: 301px;
+	background-image: url('http://posters.imdb.cn/poster-pic/0965547/T8qI2t4dz_1219753779.jpg');
+}
+.green {
+	width: 191px;
+	height: 301px;
+	float: left;
+	opacity: 0.4;
+	background-color: #0f0;
+}
+.red {
+	width: 191px;
+	height: 301px;
+	float: right;
+	opacity: 0.4;
+	background-color: #f00;
+}
+.second-part {
+	margin-right: 20px;
+	font-family: "Microsoft YaHei",serif;
+	font-size: 12px;
+}
+.what {
+    width: 23%;
+    display: inline-block;
+    height: 200px;
+    overflow: hidden;
+}
+.what span {
+    font-family: "MicrosoftYaHei";
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #418c59;
+}
+.what p {
+	font-family: "宋体";
+	color: #767777;
+}
+.when {
+    display: inline-block;
+    width: 23%;
+    margin-top: 0px;
+    height: 200px;
+    overflow: hidden;
+}
+.when span {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #d2994f;
+}
+.when p,.how p {
+    color: #231815;
+    opacity: 0.7;
+}
+.how {
+    width: 23%;
+    display: inline-block;
+    height: 200px;
+    overflow: hidden;
+}
+.how span {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #cc7680;
+}
+.swallow p {
+    margin: auto;
+}
+.how span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #cc7680;
+    text-decoration: underline;
+}
+.swallow p span {
+    font-size: 12px;
+    font-style: oblique;
+    color: #cd4a48;
+    line-height: 16px;
+    text-decoration: none;
+    opacity: 0.7;
+}
+.the p {
+    font: bold 42px "黑体",serif;
+    color: #11456b;
+    line-height: 16px;
+    padding: 0;
+    margin: 0;
+}
+.third-part-left {
+    width: 415px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 613px;
+}
+.the {
+    border-bottom: 2px solid #11456b;
+}
+.the p.qian {
+    font-size: 32px;
+    margin: 24px 0;
+}
+.the span {
+    font: bold italic 72px "黑体",serif;
+    color: #f5e327;
+}
+.second-part p {
+    margin-right: 20px;
+    line-height: 16px;
+}
+
+.forward p {
+    font: 12px "宋体",serif;
+    line-height: 16px;
+}
+.forward span {
+    font: 70px "Microsoft YaHei",serif;
+    float: left;
+    margin-right: 10px;
+    line-height: 0.8;
+    margin-bottom: 10px;
+    color: #f5e327;
+}
+.forward img {
+    float: right;
+    width: 170px;
+    height: 270px;
+    padding: 18px 10px 10px 10px;
+}
+.forward {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.aside-bottom {
+    display: inline-block;
+    overflow: hidden;
+    width: 458px;
+    height: 613px;
+    margin-left: 14px;
+}
+.aside-bottom-one {
+    background-image: url('http://img21.mtime.cn/mg/2010/04/20/125915.19014194.jpg');
+    width: 458px;
+    height: 275px;
+    padding: 0px;
+    margin-right: 0px;
+    background-repeat: repeat-x;
+}
+.aside-bottom-two {
+    width: 459px;
+    height: 318px;
+    background: #e3e0c6;
+}
+.aside-bottom-one p {
+    width: 458px;
+    height: 61px;
+    float: left;
+    margin-top: 214px;
+}
+.aside-bottom-one span {
+    float: left;
+    font: italic 12px "MicrosoftYaHei",serif;
+    color: #72b16a;
+    word-spacing: 140%;
+    margin-top: 31.5px;
+    padding: 0;
+}
+.aside-bottom-one span.duan {
+    padding: 7px 0;
+    float: left;
+    margin: 8.5px 0px 8.5px 40px;
+    font: 26px "MicorsoftYaHei",serif;
+    color: #fff;
+    border-left: 3px solid #72b16a;
+}
+.ul {
+    margin: 20px auto;
+    overflow: hidden;
+    height: 138px;
+}
+.li {
+    font: 16px "宋体",serif;
+    color: #5a5b5b;
+    text-align: left;
+    margin: 20px 20px;
+}
+.yz {
+    float: left;
+}
+.yz span {
+	float: left;
+	margin: 7px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #10456b;
+}
+.right {
+    float: right;
+    font: oblique 12px "宋体",serif;
+}
+.i {
+    overflow: hidden;
+}
+.zero {
+	float: left;
+    width: 260px;
+    height: 86px;
+    background: #cb5959;
+    padding: 37px 0;
+    margin: 0;
+}
+.zero p {
+    font: 12px "黑体";
+    color: #fff;
+    margin: 6px;
+    padding: 0;
+}
+.ze {
+	float: left;
+    border-right: 2px solid #fff;
+    height: 86px;
+    margin: 0 10px 0 0;
+}
+.zero .ze p {
+    font: 110px "MicrosoftYaHei";
+    margin-top: -30px;
+}
+.zero p.math {
+    font: italic 21px "黑体";
+    line-height: 24px;
+    margin: 0;
+}
+.world {
+    float: right;
+    width: 189px;
+    height: 160px;
+}
+.world .l {
+    font: 72px "黑体";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 1060px;
+    left: 895px;
+    color: #d45d5c;
+}
+.world p {
+    text-indent: 3em;
+    font: italic 14px "黑体";
+    line-height: 16px;
+    color: #5a5b5b;
+}
+.r {
+    font: 72px "黑体";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 1150px;
+    left: 1065px;
+    color: #d45d5c;
+}
+.footer {
+	position: absolute;
+	top: 1324px;
+    width: 892px;
+    height: 61px;
+    border-top: 1px solid #7d7979;
+}
+.footer a {
+	float: right;
+	margin-top: 2px;
+	text-decoration: none;
+	font: 12px "黑体",serif;
+	color: #d45d5c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
