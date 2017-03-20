@@ -4,12 +4,16 @@
 }
 body {
     background: #232323;
+    min-width: 490px;
 }
 .box {
     position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 95%;
-    margin: auto;
-    min-width: 465px;
+    margin: 0 auto;
     background: #fff;
 }
 .header {
@@ -352,7 +356,9 @@ select {
 }
 .fifth-part .third {
     width: 60%;
-    float: right;
+    margin: 0 2%;
+    display: inline-block;
+    vertical-align: top;
 }
 .fifth-part .third input {
     width: 40%;
