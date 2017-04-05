@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     background: #fff;
 }
-.header {
+header {
     position: relative;
     height: 61px;
     overflow: hidden;
@@ -34,7 +34,7 @@ body {
     top: 20px;
     font-size: 20px;
 }
-.header-r {
+nav {
     position: absolute;
     right: 20px;
     top: 0;
@@ -46,20 +46,20 @@ li {
     display: inline-block;
     padding-top: 20px;
 }
-.header-r a {
+nav a {
     padding: 19px;
     text-decoration: none;
     color: #999;
 }
-.header-r a:hover {
+nav a:hover {
     border-bottom: 1px solid #ea6e6e;
     color: #ea6e6e;
 }
-.header-r .se a {
+nav .se a {
     padding-left: 0;
     color: #ea6e6e;
 }
-.header-r .se a:hover {
+nav .se a:hover {
 	border: none;
 }
 .first-part {
@@ -409,19 +409,19 @@ select {
     padding: 9px 20px 12px;
     margin: -5px;
 }
-.sixth-part .footer {
+.sixth-part footer {
     height: 61px;
 }
-.sixth-part .footer .right {
+.sixth-part footer .right {
     margin: 20px;
     float: right;
 }
-.sixth-part .footer .right a {
+.sixth-part footer .right a {
 	font-size: 12px;
     text-decoration: none;
     color: #fff;
 }
-.sixth-part .footer p {
+.sixth-part footer p {
     margin: 20px;
     font-size: 12px;
     display: inline-block;

@@ -7,7 +7,7 @@ img {
 	width: 80px;
 	height: 80px;
 }
-.all {
+.wrapper {
 	position: absolute;
 	left: 20px;
 	right: 20px;
@@ -16,7 +16,7 @@ img {
 	border: 1px solid #999;
 	min-width: 440px;
 }
-.team-name {
+.secondary {
 	position: relative;
 	left: 20px;
 	top: 20px;
@@ -25,18 +25,19 @@ img {
 	border: 1px solid #999;
 	background: #fff;
 }
-.team-name img {
-	padding: 20px;
-	background: #fff;
+.secondary img {
+	float: left;
+	margin: 20px;
 }
-.team-name p {
+.secondary p {
 	float: right;
 	width: 60px;
 	padding: 20px 20px 0 0;
 	word-break: break-all;
+	text-align: center;
 	background: #fff;
 }
-.dec {
+.content {
 	position: absolute;
 	top: 20px;
 	left: 240px;
@@ -47,10 +48,10 @@ img {
 	background: #fff;
 	overflow: hidden;
 }
-.dec p {
+.content p {
 	background: #fff;
 }
-.personal-name {
+.aside {
 	position: absolute;
 	right: 20px;
 	top: 20px;
@@ -58,10 +59,10 @@ img {
 	border: 1px solid #999;
 	background: #fff;
 }
-.personal-name ul {
+.aside ul {
 	background: #fff;
 }
-.personal-name li {
+.aside li {
 	width: 80px;
 	height: 80px;
 	padding: 0px;

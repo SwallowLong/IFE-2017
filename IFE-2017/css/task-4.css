@@ -4,6 +4,11 @@ body {
 	background: #222;
 }
 .all {
+	/*为何这里使用position:absolute,因为先说明width是
+	可以直接设置的，而height却不是什么都可以设置的，
+	height只有absolute和fixed的设置会生效，而overflow、
+	float、relative设置的height都不会生效，只会自适应
+	设置height*/
 	position: absolute;
 	left: 0;
 	right: 0;

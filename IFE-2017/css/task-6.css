@@ -3,21 +3,35 @@ body {
 	margin: 0;
 	background: #000;
 }
-.all {
+.wrapper {
 	width: 892px;
 	height: 1386px;
 	margin: 0 auto;
 	padding: 0 44px;
 	background: #fff;
 }
-.header {
+header {
 	border-bottom: 2px solid #7d7979;
 }
-.header p {
+header p {
 	float: right;
     margin-top: 40px;
 	font: 12px "黑体",serif;
 	color: #d45d5c;
+}
+footer {
+    position: absolute;
+    top: 1324px;
+    width: 892px;
+    height: 61px;
+    border-top: 1px solid #7d7979;
+}
+footer a {
+    float: right;
+    margin-top: 2px;
+    text-decoration: none;
+    font: 12px "黑体",serif;
+    color: #d45d5c;
 }
 .aa {
 	width: 110px;
@@ -172,7 +186,6 @@ span.wwww {
 .the p {
     font: bold 42px "黑体",serif;
     color: #11456b;
-    line-height: 16px;
     padding: 0;
     margin: 0;
 }
@@ -189,7 +202,7 @@ span.wwww {
 }
 .the p.qian {
     font-size: 32px;
-    margin: 24px 0;
+    margin-bottom: 24px;
 }
 .the span {
     font: bold italic 72px "黑体",serif;
@@ -322,17 +335,18 @@ span.wwww {
     margin: 0;
 }
 .world {
+    position: relative;
     float: right;
     width: 189px;
     height: 160px;
 }
 .world .l {
-    font: 72px "黑体";
+    position: absolute;
+    top: 0px;
+    left: -30px;
     width: 30px;
     height: 30px;
-    position: absolute;
-    top: 1060px;
-    left: 895px;
+    font: 72px "黑体";
     color: #d45d5c;
 }
 .world p {
@@ -342,28 +356,15 @@ span.wwww {
     color: #5a5b5b;
 }
 .r {
-    font: 72px "黑体";
+    position: absolute;
+    top: 110px;
+    left: 120px;
     width: 30px;
     height: 30px;
-    position: absolute;
-    top: 1150px;
-    left: 1065px;
+    font: 72px "黑体";
     color: #d45d5c;
 }
-.footer {
-	position: absolute;
-	top: 1324px;
-    width: 892px;
-    height: 61px;
-    border-top: 1px solid #7d7979;
-}
-.footer a {
-	float: right;
-	margin-top: 2px;
-	text-decoration: none;
-	font: 12px "黑体",serif;
-	color: #d45d5c;
-}
+
 
 
 

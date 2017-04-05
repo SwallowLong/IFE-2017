@@ -10,43 +10,52 @@ img {
 	width: 30%;
 	height: 20%;
 }
-.all {
+.wrapper {
 	position: relative;
 	height: 100%;
 	margin: 0 40px;
 	background: #eee;
 	min-width: 728px;
 }
-.nav {
+nav {
     position: relative;
     width: 100%;
 	height: 70px;
 	background: #2c2c2c;
 }
-.nav h1 {
+nav h1 {
 	float: left;
 	margin: 20px;
 	line-height: 30px;
 	color: #fff;
 }
-.nav ul {
+nav ul {
 	float: right;
 	margin-top: 25px;	
 	list-style-type: disc;
 	line-height: 20px;
 }
-.nav li {
+nav li {
 	float: left;
 	margin: auto 20px;
 }
-.nav a {
+nav a {
 	display: block;
 	text-decoration: none;
 	color: #fff;
 }
-.nav a:hover {
+nav a:hover {
 	color: #fff;
 	opacity: 0.4;
+}
+footer {
+	height: 70px;
+	text-align: center;
+	background: #000;
+}
+footer p {
+	padding-top: 19px;
+	color: #fff;
 }
 .first {
 	padding: 10px;
@@ -103,22 +112,51 @@ img {
 ol {
 	padding-left: 1em;
 }
-.aside {
+aside {
 	position: absolute;
 	top: 90px;
 	right: 20px;
 	width: 350px;
 	padding: 10px;
-	text-align: center;
-	background: #fff;
+    background: #fff;
 	border-radius: 10px;
 }
-.align {
-	padding-right: 60px;
+aside p {
+	margin: 10px;
+	text-align: center;
+	opacity: 0.4;
+	filter: alpha(opacity=40);/*For IE*/  
+}
+fieldset {
+	border-color: transparent;
+}
+label {
+	display: block;
+	float: left;
+	width: 140px;
+	/*margin过大的话将会导致下一个label上浮，
+	这是因为margin足够大的话，右侧就会有足够
+	的空间使其上浮，解决方法将右侧的input也
+	填加足够的margin，或padding*/
+	margin: 10px 0;
 	text-align: right;
 }
-.aside p {
-	margin: 10px;
+input {
+	padding: 5px 0;
+	margin: 10px 0;
+}
+.radio label,.checkbox label {
+	width: auto;
+	margin: 5px;
+}
+h4 {
+	width: 140px;
+	float: left;
+	margin: 10px 0;
+	text-align: right;
+}
+select {
+	margin: 10px 0px;
 }
 button {
 	width: 310px;
@@ -128,12 +166,4 @@ button {
 	color: #fff;
 	background: #575EE9;
 } 
-.footer {
-	height: 70px;
-	text-align: center;
-	background: #000;
-}
-.footer p {
-	padding-top: 19px;
-	color: #fff;
-}
+

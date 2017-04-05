@@ -1,4 +1,8 @@
-body{
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
 	margin: 0 35px;
 	padding: 0px;
 	font-size:15px;
@@ -6,90 +10,98 @@ body{
 	vertical-align: bottom;
 	background-color: #1d1d1d;
 }
-.float .first .second .third .four .fifth{
-	margin: 0px;
-    padding: 0px;
+fieldset {
+	border-color: transparent;
 }
-.float{
+li {
+	list-style: none;
+}
+.wrapper {
 	overflow: hidden;
     background:#2c2c2c;
 }
-.float h1{
+nav {
+	overflow: hidden;
+	background: #000;
+}
+nav h1 {
 	float: left;
 	color: #fff;
-    padding-left: 10px;
+	padding-top: 15px;
+    padding-left: 20px;
 }
-.float ul{
+
+nav ul {
 	float: right;
 	vertical-align: bottom;
 	list-style-type: disc;
 }
-.float li{
+nav li {
 	float: left;
-	padding:15px  20px 0px 0px;
+	padding:20px;
 }
-.float a{
+nav a {
 	float: left;
 	display: block;
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
 }
-.float a:hover{
+nav a:hover {
 	font-weight: bold;
 	opacity: 0.4;
 }
-.nor{
+footer {
+	position: absolute;
+	left: 35px;
+	right: 35px;
+    padding: 20px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+}
+.content {
 	padding: 10px;
 	margin: 0px;
 	background-color: #f0f0f0;
 }
-.first{
+.first {
 	margin: 10px;
 	padding: 5px;
 	border: 1px solid #aeaeae;
 	background: #fff;
-	box-shadow: 2px 2px 1px #aeaeae;
+	box-shadow: 1px 1px 1px #aeaeae;
 	border-radius: 10px;
 }
-.second{
+.second {
 	margin: 10px;
 	padding: 5px;
 	border: 1px solid #aeaeae;
 	background: #fff;
-	box-shadow: 2px 2px 1px #aeaeae;
+	box-shadow: 1px 1px 1px #aeaeae;
 	border-radius: 10px;
 }
-.third{
+.third {
 	margin: 10px;
 	padding: 5px;
 	border: 1px solid #aeaeae;
 	background: #fff;
-	box-shadow: 2px 2px 1px #aeaeae;
+	box-shadow: 1px 1px 1px #aeaeae;
 	border-radius: 10px;
 }
-.four{
+.four {
 	margin: 10px;
 	padding: 5px;
 	border: 1px solid #aeaeae;
 	background: #fff;
-	box-shadow: 2px 2px 1px #aeaeae;
+	box-shadow: 1px 1px 1px #aeaeae;
 	border-radius: 10px;
 }
-.fifth{
+aside {
 	margin: 10px;
 	padding: 5px;
 	border: 1px solid #aeaeae;
 	background: #fff;
-	box-shadow: 2px 2px 1px #aeaeae;
+	box-shadow: 1px 1px 1px #aeaeae;
 	border-radius: 10px;
-}
-.footer{
-	position: absolute;
-	left: 35px;
-	right: 35px;
-	padding-bottom: 20px;
-	color: #fff;
-	background: #000;
-	text-align: center;
 }
