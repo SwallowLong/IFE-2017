@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>task-8 bootstrap</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>task-8 box-sizing</title>
+    <link rel="stylesheet" type="text/css" href="../css/task-8-2.css">
 </head>
 <body>
-    <div class="container-fluid">
-    	<p class="row">
-            <p class="col-md-4 col-sm-6 col-xs-6">
-                <input type="text" class="form-control">
-            </p>
-            <p class="col-md-4 col-sm-6 col-xs-6">
-                <input type="text" class="form-control">
-            </p>
-            <p class="col-md-4 col-sm-12 col-xs-12">
-                <input type="text" class="form-control">
-            </p>
-        </p>
-        <p class="row">
-            <p class="col-md-3 col-sm-3 col-xs-3">
-                <input type="text" class="form-control">
-            </p>
-            <p class="col-md-6 col-sm-6 col-xs-6">
-                <input type="text" class="form-control">
-            </p>
-            <p class="col-md-3 col-sm-3 col-xs-3">
-                <input type="text" class="form-control">
-            </p>
-        </p>
-        <p class="row">
-            <p class="col-md-1 col-sm-2 col-xs-2">
-                <input type="text" class="form-control">
-            </p>
-            <p class="col-md-1 col-sm-2 col-xs-2">
-                <input type="text" class="form-control">
-            </p>
-            <p class="col-md-2 col-sm-8 col-xs-8">
-                <input type="text" class="form-control">
-            </p>
-            <p class="col-md-2 col-sm-3 col-xs-3">
-                <input type="text" class="form-control">
-            </p>
-            <p class="col-md-6 col-sm-3 col-xs-3">
-                <input type="text" class="form-control">
-            </p>
-    	</p>
+    <div class="wrapper">
+        <!--这里在class中使用2个类，是为了使切换时，好编辑css，若是只使用一个类的类名的，那么切换后需要逐个的对照更改，但是使用col-的话，不需要对照，直接就OK，节省时间-->
+        <div class="col-md-4 col-sm-6">
+            <div class="small"></div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="small"></div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="small"></div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+            <div class="small"></div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <div class="small"></div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+            <div class="small"></div>
+        </div>
+        <div class="col-md-1 col-sm-2">
+            <div class="small"></div>
+        </div>
+        <div class="col-md-1 col-sm-2">
+            <div class="small"></div>
+        </div>
+        <div class="col-md-2 col-sm-8">
+            <div class="small"></div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+            <div class="small"></div>
+        </div>
+        <div class="col-md-6 col-sm-3">
+            <div class="small"></div>
+        </div>
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
