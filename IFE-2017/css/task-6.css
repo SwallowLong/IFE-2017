@@ -191,11 +191,11 @@ span.wwww {
 }
 .third-part-left {
     width: 415px;
-    display: inline-block;
-    overflow: hidden;
+    float: left;
     margin: 0;
     padding: 0;
     height: 613px;
+    overflow: hidden;
 }
 .the {
     border-bottom: 2px solid #11456b;
@@ -236,11 +236,10 @@ span.wwww {
     overflow: hidden;
 }
 .aside-bottom {
-    display: inline-block;
-    overflow: hidden;
+    float: right;
     width: 458px;
     height: 613px;
-    margin-left: 14px;
+    overflow: hidden;
 }
 .aside-bottom-one {
     background-image: url('http://img21.mtime.cn/mg/2010/04/20/125915.19014194.jpg');
@@ -340,25 +339,24 @@ span.wwww {
     width: 189px;
     height: 160px;
 }
-.world .l {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 30px;
-    height: 30px;
-    font: 72px "黑体";
-    color: #d45d5c;
-}
 .world p {
-    text-indent: 3em;
+    padding: 0 10px;
     font: italic 14px "黑体";
+    word-break: break-all;
     line-height: 16px;
     color: #5a5b5b;
 }
+.world .l {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: -14px;
+    font: 72px "黑体";
+    direction: rtl;
+    color: #d45d5c;
+}
 .r {
-    position: absolute;
-    top: 110px;
-    left: 120px;
+    float: right;
     width: 30px;
     height: 30px;
     font: 72px "黑体";

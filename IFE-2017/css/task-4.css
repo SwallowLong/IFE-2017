@@ -6,9 +6,10 @@ body {
 .all {
 	/*为何这里使用position:absolute,因为先说明width是
 	可以直接设置的，而height却不是什么都可以设置的，
-	height只有absolute和fixed的设置会生效，而overflow、
-	float、relative设置的height都不会生效，只会自适应
-	设置height*/
+	使用百分数设置的height只有absolute和fixed会生效，
+	而overflow、float、relative设置的百分数的height都
+	不会生效，只会自适应设置height，当然若是确定数值的
+	height是所有都可以设置的*/
 	position: absolute;
 	left: 0;
 	right: 0;
