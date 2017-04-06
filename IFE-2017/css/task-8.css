@@ -33,7 +33,7 @@ div[class^="col"] {
 	height: 50px;
 	margin-top: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 400px) {
 .col-md-1 {
 	width: 8.33%;
 }
@@ -50,7 +50,7 @@ div[class^="col"] {
 	width: 50%;
 }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:400px) {
 .col-sm-2 {
 	width: 16.66%;
 }
