@@ -284,6 +284,7 @@ ul.price li:first-child {
     margin-left: 0;
 }
 .quote a {
+    display: block;
     text-decoration: none;
 }
 .price li p {
