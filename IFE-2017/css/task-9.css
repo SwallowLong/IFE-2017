@@ -131,19 +131,6 @@ aside li {
     padding: 10px 20px;
     color: #fff;
 }
-aside li.light {
-    opacity: 0.4;
-}
-aside li.light a {
-    opacity: 1;
-}
-/*这里有个opacity的继承问题，
-所以特别将其中一个拉出来，而
-此的li也特别设置了，所以伪类
-也要特别设置*/
-aside li.light:hover，aside li.light:active {
-    opacity: 1;
-}
 aside > ul li a {
     display: block;
     padding-left: 20px;
@@ -162,8 +149,11 @@ aside > ul li a.indent,.doc-open a {
 aside > ul li a:hover,aside > ul li a:active {
     opacity: 1;
 }
-.close-arrow:hover {
+.close-arrow:hover,.close-arrow:active {
     background: url(../images/open-arrow.png) no-repeat 0 15px;
+}
+.doc-close:hover,.doc-close:active {
+    background: url(../images/doc-open.png) no-repeat 40px;
 }
 .file-open {
     background: url(../images/file-open.png) no-repeat 0 15px;
@@ -179,6 +169,9 @@ aside > ul li a:hover,aside > ul li a:active {
 }
 .doc-open {
     background: url(../images/doc-open.png) no-repeat 40px;
+}
+.doc-close {
+    background: url(../images/doc-close.png) no-repeat 40px;
 }
 .star {
     background: url(../images/star.png) no-repeat 0;
