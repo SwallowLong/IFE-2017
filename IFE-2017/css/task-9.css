@@ -1,0 +1,720 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #333;
+}
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    background: #efefef;
+    min-width: 70em;
+}
+[id^="button"] {
+	cursor: pointer;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background: #2885b6;
+}
+ul {
+	list-style: none;
+}
+header img {
+	margin: 10px 40px;
+	cursor: pointer;
+}
+header ul {
+    float: right;
+    margin: 15px 100px;
+}
+header li {
+    float: left;
+    position: relative;
+}
+#find {
+    height: 30px;
+    width: 300px;
+    padding-left: 40px;
+    background: #fff url(../images/zoom.png) no-repeat 20px;
+    border-radius: 15px;
+    border: none;
+}
+.login {
+	padding-left: 20px;
+    margin-left: 35px;
+    margin-top: 4px; 
+    font-size: 14px;
+    background: url(../images/login.png) no-repeat 2px;
+    color: #fff; 
+    cursor: pointer;
+}
+.content {
+	overflow: hidden;
+	padding-bottom: 150px;
+}
+aside {
+    float: left;
+    width: 20%;
+    background: #383d4e;
+    padding-bottom: 1000em;
+    margin-bottom: -1000em;
+}
+aside header {
+    height: auto;
+    margin-bottom: 20px;
+    background: #383d4e;
+    zoom: 1;
+}
+.outline {
+    float: left;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 25px 0 0 40px;
+}
+aside header span {
+	display: block;
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #eee;   
+}
+strong {
+    color: #fff;
+    float: right;
+    width: 20%;
+    margin-right: 30%;
+    margin-top: 40px;
+}
+aside header::after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.subtitle {
+    float: left;
+    width: 110px;
+    padding-right: 10%;
+    margin-bottom: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #fff;
+    opacity: 0.5;
+}
+.subtitle.left {
+    text-align: left;
+    border-left: 2px solid;
+    padding-left: 10%;
+}
+aside > ul {
+    clear: both;
+    padding-left: 50px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+aside > ul li p {
+	padding-left: 20px;
+}
+aside .opacity1 {
+    opacity: 0.4;
+}
+aside li {
+    padding: 10px 20px;
+    color: #fff;
+}
+.file_open {
+    background: url(../images/file_open.png) no-repeat 0 15px;
+}
+.close_arrow {
+    background: url(../images/close_arrow.png) no-repeat 0 15px;
+}
+.file_cur {
+    background: url(../images/file_cur.png) no-repeat 0;
+}
+.open_arrow {
+    background: url(../images/open_arrow.png) no-repeat 0 15px;
+}
+.doc_open {
+    padding-left: 40px;
+    background: url(../images/doc_open.png) no-repeat 20px;
+}
+.star {
+    background: url(../images/star.png) no-repeat 0;
+}
+.share {
+    background: url(../images/share.png) no-repeat 0;
+}
+.user_info {
+    background: url(../images/user_info.png) no-repeat 0;
+}
+.primary {
+    float: right;
+    width: 80%;
+}
+h3 {
+    font-size: 0.8em;
+    padding-left: 20px;
+    font-weight: normal;
+    background: #eee;
+    color: #aaa;
+}
+h3.bin {
+	background: #fff;
+}
+h3 span {
+    color: #2885b6;
+}
+.top {
+    width: 90%;
+    margin: 20px auto 10px;
+    background: #fff;
+    border-color: transparent;
+    overflow: hidden;
+}
+div[class^="top"] {
+    float: left;
+    margin: 20px 0 20px 40px;
+}
+fieldset.top label {
+	float: left;
+	display: block;
+	width: 4em;
+    font-size: 0.8em;
+    color: #999;  
+}
+.top input, .top select {
+    height: 22px;
+}
+fieldset.top select {
+	float: left;
+    width: 5em;
+    border: 1px solid #ccc;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../images/black_arrow.png) no-repeat 90%;
+    cursor: pointer;   
+}
+#first {
+    background: url(../images/blue_arrow.png) no-repeat 90%;
+}
+.top-2 {
+    width: 14em;
+    background: url(../images/change.png) no-repeat 11.5em;
+    position: relative;
+}
+.top-2 p {
+    position: absolute;
+    left: 15.35em;
+    top: 18px;
+    font-size: 0.8em;
+    color: #fff;
+}
+#buyer {
+    margin-bottom: 10px;
+}
+#buyer, #seller {
+    width: 10em;
+}
+.top-3 {
+    width: 22em;
+}
+#data {
+    float: left;
+    width: 10em;
+    margin-bottom: -2px;
+    box-sizing: border-box;
+}
+#number {
+    margin-top: 10px;
+}
+label[for="number"] {
+    margin-top: 10px;
+}
+label[for="time"], label[for="deal"] {
+    text-align: center;
+}
+#deal {
+    width: 10em;
+    margin-top: 10px;
+}
+label[for="deal"] {
+    margin-top: 10px;
+}
+#button {
+    height: auto;
+    padding: 2px 10px;
+    margin-top: 32px; 
+    border-radius: 2px;
+    border: 1px solid transparent;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px; 
+    background: #2885b6;
+    color: #fff;
+}
+.price {
+    width: 90%;
+    height: 70px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+.price li {
+    float: left;
+    width: 11.5%;
+    margin-left: 1%;
+    font-size: 0.8em;
+    line-height: 70px;
+    background: #fff;  
+    cursor: pointer;
+}
+.price li.quote {
+    width: 3.8%;
+    font-size: 1.7em;
+}
+ul.price li:first-child {
+    margin-left: 0;
+}
+.quote a {
+    text-decoration: none;
+}
+.price li p {
+    line-height: 35px;
+}
+.price li p.money {
+    font-size: 1.5em;
+    color: #e37307;
+}
+.money span {
+    color: #999;
+}
+ul.price li:nth-child(9) {
+    width: 10.4%;
+    padding-left: 5%;
+    background: #fff url(../images/history.png) no-repeat 20%;
+}
+.volume {
+    width: 90%;
+    margin: 0 auto 10px;
+}
+.volume > h3 {
+    padding: 5px 0;
+    line-height: 19px;
+    color: #333;
+}
+.volume ul {
+    overflow: hidden;
+}
+.volume > ul li {
+    float: left;
+    width: 20.5%;
+    padding: 15px;
+    margin-right: 6%;
+    line-height: 20px;
+    font-size: 0.75em;
+    border-left: 3px solid;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;  
+    background: #fff;
+    color: #333;
+}
+.volume > ul li span {
+    color: #999;
+}
+.volume > ul li:nth-child(1) {
+    border-color: #04c9a3;
+}
+.volume > ul li:nth-child(2) {
+    border-color: #2885b6;
+}
+.volume > ul li:nth-child(3) {
+    border-color: #aa0dfb;
+}
+.volume > ul li:nth-child(4) {
+	margin-right: 0;
+    border-color: #fb720d;
+}
+.volume > ul li:nth-child(n) p::after {
+    content: "";
+    float: right;
+    display: block;
+    width: 40%;
+    height: 40px;
+    background: #04c9a3; 
+}
+.volume > ul li:nth-child(2) p::after {
+	background: #2885b6;
+}
+.volume > ul li:nth-child(3) p::after {
+	background: #aa0dfb;#fb720d
+}
+.volume > ul li:nth-child(4) p::after {
+	background: #fb720d;
+}
+.project {
+    width: 90%;
+    margin: 0 auto 10px;
+    font-size: 0.8em;
+    overflow: hidden;
+}
+.material {
+    width: 59%;
+    height: 350px;
+    float: left;
+    padding: 2px;
+    margin-right: 1%;
+    border: 1px solid #ced1d4;
+    border-radius: 2%;
+    -moz-border-radius: 2%;
+    -webkit-border-radius: 2%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #fff;
+    overflow: hidden;
+}
+.project h3,.market h3 {
+	font-size: 0.9em;
+	padding: 10px 20px;
+}
+.tab-css {
+	padding: 20px;
+}
+.tab-css ul {
+	list-style: none;
+	position: relative;
+}
+.tab-css ul li {
+	float: left;
+	width: 19%;
+	margin-right: 1%;
+}
+.tab-css ul li label {
+	width: 100%;
+	display: block;
+	border: 1px solid #eee;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+	line-height: 28px;
+	text-align: center;
+	background: #eee;
+	cursor: pointer;
+}
+.tab-css input {
+	display: none;
+}
+.tab-css [class$="menu"] {
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	border: 1px solid #d1d1d1;
+	border-radius: 0 0 5px 5px;
+	display: none;
+}
+.tab-css table {
+	border-collapse: collapse;
+	border-color: #d1d1d1;
+	line-height: 28px;
+	margin: 20px auto 30px auto;
+}
+.tab-css table td {
+	padding: 0 10px;
+	border-color: #d1d1d1;
+	cursor: pointer;
+}
+.tab-css table td:hover,.tab-css table td:active {
+	background: #eee;
+}
+.tab-css [type="radio"]:checked~[class$="menu"] {
+	display: block;
+}
+.tab-css [type="radio"]:checked+label {
+	position: relative;
+	border: 1px solid #d1d1d1;
+	border-radius: 5px 5px 0 0 ;
+	border-bottom: none;
+	line-height: 30px;
+	z-index: 1; 
+	background: #fefefe;
+}
+.detail {
+	float: left;
+	width: 40%;
+	height: 350px;
+	padding-top: 0px;
+	border: 1px solid #ced1d4;
+    border-radius: 2%;
+    -moz-border-radius: 2%;
+    -webkit-border-radius: 2%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	background: #fff;
+	overflow: hidden;
+}
+.detail ul {
+	padding: 20px;
+	list-style: none;
+}
+.detail li {
+	width: 100%;
+	height: 44px;
+	margin-right: 0 auto;
+	border-bottom: 1px solid #d1d1d1;
+	overflow: hidden;
+}
+.detail li span {
+	padding: 0 10px;
+	line-height: 20px;
+	color: #aaa;
+}
+.detail li p {
+	padding: 0 10px;
+	line-height: 24px;
+}
+.detail li:nth-child(3) {
+	height: 125px;
+}
+.detail li div {
+	width: 66%;
+	float: left;
+	padding-left: 10px;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	overflow: hidden;
+}
+.detail li .small {
+	width: 33%;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border-right: 1px solid #d1d1d1;
+}
+.detail input {
+	margin-top: 10px;
+	line-height: 20px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+}
+#k {
+	padding-left: 20px;
+    margin-left: 10px;
+    background: url(../images/gou.png) no-repeat 2px;
+}
+#button2 {
+	width: 2em;
+	float: right;
+	padding: 0 10px;
+	margin-right: 10px;
+	background: #2885b6;
+	color: #fff;
+}
+.market {
+	width: 90%;
+	margin: 0 auto 10px;
+	font-size: 0.8em;
+	overflow: hidden;
+	position: relative;
+}
+.calender {
+	width: 40%;
+	float: left;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	overflow: hidden;
+	background: #fff;
+}
+.calender .table {
+	padding: 20px;
+	padding-top: 15px;
+	border-color: #d1d1d1;
+	text-align: center;
+	color: #666;
+}
+.calender table caption {
+	padding-bottom: 10px;
+	line-height: 20px;
+	border-bottom: 1px solid #2885b6;
+	overflow: hidden;
+}
+.calender table caption label {
+	display: block;
+	float: left;
+	width: 24%;
+	margin-right: 1%;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #d1d1d1;
+    text-align: center;
+}
+.calender table caption label select {
+	width: 100%;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	background: #fff url(../images/select_down.png) no-repeat 90%;
+	color: #777;
+	cursor: pointer;
+}
+.calender table caption label:first-child {
+	width: 23%;
+}
+.calender table caption label:nth-child(2) {
+	width: 26%;
+	padding: 0 2%;
+}
+.calender table caption label:nth-child(4) {
+	margin-right: 0;
+}
+.calender table th,.calender table td {
+	width: 14.28%;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.calender table th {
+	border-collapse: collapse;
+	border-bottom: 1px solid #d1d1d1;
+}
+.calender table .red {
+	color: #f04b4b;
+}
+.calender table .red p{
+	color: #666;
+}
+#button3 {
+	line-height: 18px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	background: #fff;
+}
+.calender table .selected,
+.calender table td:hover,
+.calender table td:active {
+	border-color: #547cf3;
+	position: relative;
+	z-index: 1;
+}
+.calender table th:hover,
+.calender table th:active {
+	background: #eee;
+}
+.car {
+    width: 59%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+}
+.car .table2 {
+	width: 80%;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+.table2 table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #d1d1d1;
+	text-align: center;
+}
+.table2 table th,.table2 table td {
+	line-height: 22px;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #d1d1d1;
+    color: #333;
+}
+.table2 table td {
+	font-size: 0.9em;
+	overflow: hidden;
+}
+.table2 table td span {
+	float: left;
+}
+.table2 table td .sw {
+	float: left;
+	margin: 10px;
+    width: 60%;
+    height: 4px;
+    background: #ccc;
+}
+.table2 table p {
+	height: 4px;
+}
+.o-8 {
+	width: 80%;
+	background: #fe570a;
+}
+.o-7 {
+	width: 70%;
+	background: #f59d53;
+}
+.o-6 {
+	width: 60%;
+	background: #f59d53;
+}
+.b-5 {
+	width: 50%;
+	background: #6bbbe7;
+}
+.b-4 {
+	width: 40%;
+	background: #6bbbe7;
+}
+.b-3 {
+	width: 39%;
+	background: #6bbbe7;
+}
+.b-2 {
+	width: 35%;
+	background: #6bbbe7;
+}
+.b-1 {
+	width: 30%;
+	background: #6bbbe7;
+}
+.table2 tr th:first-child,
+.table2 tr td:first-child {
+	width: 15%;
+}
+.table2 tr th:nth-child(2),
+.table2 tr td:nth-child(2) {
+	width: 20%;
+}
+.table2 tr th:nth-child(3),
+.table2 tr td:nth-child(3) {
+	width: 65%;
+	text-align: left;
+	padding-left: 30px;
+}
+.table2 table tr:hover,.table2 table tr:active,
+/*即使设置了tr任然设置th和td是因为，th和td的background
+会覆盖掉tr的颜色，即使这个颜色是继承，而不是设置的任然会
+覆盖tr*/
+.table2 table th:hover,.table2 table th:active,
+.table2 table td:hover,.table2 table td:active {
+	background: #eee;
+	cursor: pointer;
+}
