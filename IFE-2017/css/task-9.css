@@ -5,21 +5,11 @@
 body {
 	background: #333;
 }
-@media screen and (min-width: 768px) {
 .wrapper {
     width: 95%;
     margin: 0 auto;
     background: #efefef;
     min-width: 70em;
-}    
-}
-@media screen and (max-width:768px) {
-    .wrapper {
-        width: 95%;
-        margin: 20px auto;
-        background: #efefef;
-        min-width: 70em;
-    }
 }
 [id^="button"] {
 	cursor: pointer;
