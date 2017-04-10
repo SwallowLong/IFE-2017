@@ -301,6 +301,68 @@ ul.price li:nth-child(9) {
     padding-left: 5%;
     background: #fff url(../images/history.png) no-repeat 20%;
 }
+ul.price li.selected {
+    border-top: 3px solid #2885b6;
+}
+ul.price li.selected p {
+    line-height: 33px;
+}
+ul.price li:nth-child(1):hover,
+ul.price li:nth-child(1):active {
+    background: #8ee2f5;
+}
+ul.price li:nth-child(2):hover,
+ul.price li:nth-child(2):active {
+    border-top: 4px solid #2885b6;
+}
+ul.price li:nth-child(3):hover,
+ul.price li:nth-child(3):active {
+    border-top: 4px solid #f00828;
+}
+ul.price li:nth-child(4):hover,
+ul.price li:nth-child(4):active {
+    border-top: 4px solid #aa0dfb;
+}
+ul.price li:nth-child(5):hover,
+ul.price li:nth-child(5):active {
+    border-top: 4px solid #fb720d;
+}
+ul.price li:nth-child(6):hover,
+ul.price li:nth-child(6):active {
+    border-top: 4px solid #04c9a3;
+}
+ul.price li:nth-child(7):hover,
+ul.price li:nth-child(7):active {
+    border-top: 4px solid #b1f008;
+}
+ul.price li:nth-child(8):hover,
+ul.price li:nth-child(8):active {
+    background: #8ee2f5;
+}
+ul.price li:nth-child(2):hover p,
+ul.price li:nth-child(2):active p {
+    line-height: 33px;
+}
+ul.price li:nth-child(3):hover p,
+ul.price li:nth-child(3):active p {
+    line-height: 33px;
+}
+ul.price li:nth-child(4):hover p,
+ul.price li:nth-child(4):active p {
+    line-height: 33px;
+}
+ul.price li:nth-child(5):hover p,
+ul.price li:nth-child(5):active p {
+    line-height: 33px;
+}
+ul.price li:nth-child(6):hover p,
+ul.price li:nth-child(6):active p {
+    line-height: 33px;
+}
+ul.price li:nth-child(7):hover p,
+ul.price li:nth-child(7):active p {
+    line-height: 33px;
+}
 .volume {
     width: 90%;
     margin: 0 auto 10px;
