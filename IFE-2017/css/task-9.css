@@ -584,6 +584,7 @@ ul.price li:nth-child(9) {
 }
 .calender table th,.calender table td {
 	width: 14.28%;
+    line-height: 20px;
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -591,6 +592,7 @@ ul.price li:nth-child(9) {
     cursor: pointer;
 }
 .calender table th {
+    line-height: 30px;
 	border-collapse: collapse;
 	border-bottom: 1px solid #d1d1d1;
 }
