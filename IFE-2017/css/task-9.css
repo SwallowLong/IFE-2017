@@ -1,9 +1,9 @@
 * {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 body {
-	background: #333;
+    background: #333;
 }
 .wrapper {
     width: 95%;
@@ -12,7 +12,7 @@ body {
     min-width: 70em;
 }
 [id^="button"] {
-	cursor: pointer;
+    cursor: pointer;
 }
 header {
     width: 100%;
@@ -20,11 +20,11 @@ header {
     background: #2885b6;
 }
 ul {
-	list-style: none;
+    list-style: none;
 }
 header img {
-	margin: 10px 40px;
-	cursor: pointer;
+    margin: 10px 40px;
+    cursor: pointer;
 }
 header ul {
     float: right;
@@ -43,7 +43,7 @@ header li {
     border: none;
 }
 .login {
-	padding-left: 20px;
+    padding-left: 20px;
     margin-left: 35px;
     margin-top: 4px; 
     font-size: 14px;
@@ -52,8 +52,8 @@ header li {
     cursor: pointer;
 }
 .content {
-	overflow: hidden;
-	padding-bottom: 150px;
+    overflow: hidden;
+    padding-bottom: 150px;
 }
 aside {
     float: left;
@@ -77,7 +77,7 @@ aside header {
     margin: 25px 0 0 40px;
 }
 aside header span {
-	display: block;
+    display: block;
     width: 45px;
     height: 45px;
     margin: 5px;
@@ -121,31 +121,64 @@ aside > ul {
     font-size: 0.8em;
     cursor: pointer;
 }
-aside > ul li p {
-	padding-left: 20px;
-}
-aside .opacity1 {
+aside a {
     opacity: 0.4;
+}
+aside a.selected {
+    opacity: 1;
 }
 aside li {
     padding: 10px 20px;
     color: #fff;
 }
-.file_open {
-    background: url(../images/file_open.png) no-repeat 0 15px;
+aside li.light {
+    opacity: 0.4;
 }
-.close_arrow {
-    background: url(../images/close_arrow.png) no-repeat 0 15px;
+aside li.light a {
+    opacity: 1;
 }
-.file_cur {
-    background: url(../images/file_cur.png) no-repeat 0;
+/*这里有个opacity的继承问题，
+所以特别将其中一个拉出来，而
+此的li也特别设置了，所以伪类
+也要特别设置*/
+aside li.light:hover，aside li.light:active {
+    opacity: 1;
 }
-.open_arrow {
-    background: url(../images/open_arrow.png) no-repeat 0 15px;
+aside > ul li a {
+    display: block;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
 }
-.doc_open {
+aside li[class$="arrow"]  {
+    padding-left: 0;
+}
+aside li[class$="arrow"] a {
     padding-left: 40px;
-    background: url(../images/doc_open.png) no-repeat 20px;
+}
+aside > ul li a.indent,.doc-open a {
+    padding-left: 0;
+}
+aside > ul li a:hover,aside > ul li a:active {
+    opacity: 1;
+}
+.close-arrow:hover {
+    background: url(../images/open-arrow.png) no-repeat 0 15px;
+}
+.file-open {
+    background: url(../images/file-open.png) no-repeat 0 15px;
+}
+.close-arrow {
+    background: url(../images/close-arrow.png) no-repeat 0 15px;
+}
+.file-cur {
+    background: url(../images/file-cur.png) no-repeat 20px;
+}
+.open-arrow {
+    background: url(../images/open-arrow.png) no-repeat 0 15px;
+}
+.doc-open {
+    background: url(../images/doc-open.png) no-repeat 40px;
 }
 .star {
     background: url(../images/star.png) no-repeat 0;
@@ -153,8 +186,8 @@ aside li {
 .share {
     background: url(../images/share.png) no-repeat 0;
 }
-.user_info {
-    background: url(../images/user_info.png) no-repeat 0;
+.user-info {
+    background: url(../images/user-info.png) no-repeat 0;
 }
 .primary {
     float: right;
@@ -168,7 +201,7 @@ h3 {
     color: #aaa;
 }
 h3.bin {
-	background: #fff;
+    background: #fff;
 }
 h3 span {
     color: #2885b6;
@@ -185,9 +218,9 @@ div[class^="top"] {
     margin: 20px 0 20px 40px;
 }
 fieldset.top label {
-	float: left;
-	display: block;
-	width: 4em;
+    float: left;
+    display: block;
+    width: 4em;
     font-size: 0.8em;
     color: #999;  
 }
@@ -195,17 +228,17 @@ fieldset.top label {
     height: 22px;
 }
 fieldset.top select {
-	float: left;
+    float: left;
     width: 5em;
     border: 1px solid #ccc;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    background: url(../images/black_arrow.png) no-repeat 90%;
+    background: url(../images/black-arrow.png) no-repeat 90%;
     cursor: pointer;   
 }
 #first {
-    background: url(../images/blue_arrow.png) no-repeat 90%;
+    background: url(../images/blue-arrow.png) no-repeat 90%;
 }
 .top-2 {
     width: 14em;
@@ -403,7 +436,7 @@ ul.price li:nth-child(7):active p {
     border-color: #aa0dfb;
 }
 .volume > ul li:nth-child(4) {
-	margin-right: 0;
+    margin-right: 0;
     border-color: #fb720d;
 }
 .volume > ul li:nth-child(n) p::after {
@@ -415,13 +448,13 @@ ul.price li:nth-child(7):active p {
     background: #04c9a3; 
 }
 .volume > ul li:nth-child(2) p::after {
-	background: #2885b6;
+    background: #2885b6;
 }
 .volume > ul li:nth-child(3) p::after {
-	background: #aa0dfb;#fb720d
+    background: #aa0dfb;#fb720d
 }
 .volume > ul li:nth-child(4) p::after {
-	background: #fb720d;
+    background: #fb720d;
 }
 .project {
     width: 90%;
@@ -446,209 +479,209 @@ ul.price li:nth-child(7):active p {
     overflow: hidden;
 }
 .project h3,.market h3 {
-	font-size: 0.9em;
-	padding: 10px 20px;
+    font-size: 0.9em;
+    padding: 10px 20px;
 }
 .tab-css {
-	padding: 20px;
+    padding: 20px;
 }
 .tab-css ul {
-	list-style: none;
-	position: relative;
+    list-style: none;
+    position: relative;
 }
 .tab-css ul li {
-	float: left;
-	width: 19%;
-	margin-right: 1%;
+    float: left;
+    width: 19%;
+    margin-right: 1%;
 }
 .tab-css ul li label {
-	width: 100%;
-	display: block;
-	border: 1px solid #eee;
-	border-bottom: none;
-	border-radius: 5px 5px 0 0;
-	line-height: 28px;
-	text-align: center;
-	background: #eee;
-	cursor: pointer;
+    width: 100%;
+    display: block;
+    border: 1px solid #eee;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    line-height: 28px;
+    text-align: center;
+    background: #eee;
+    cursor: pointer;
 }
 .tab-css input {
-	display: none;
+    display: none;
 }
 .tab-css [class$="menu"] {
-	width: 100%;
-	position: absolute;
-	top: 30px;
-	left: 0;
-	border: 1px solid #d1d1d1;
-	border-radius: 0 0 5px 5px;
-	display: none;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: 1px solid #d1d1d1;
+    border-radius: 0 0 5px 5px;
+    display: none;
 }
 .tab-css table {
-	border-collapse: collapse;
-	border-color: #d1d1d1;
-	line-height: 28px;
-	margin: 20px auto 30px auto;
+    border-collapse: collapse;
+    border-color: #d1d1d1;
+    line-height: 28px;
+    margin: 20px auto 30px auto;
 }
 .tab-css table td {
-	padding: 0 10px;
-	border-color: #d1d1d1;
-	cursor: pointer;
+    padding: 0 10px;
+    border-color: #d1d1d1;
+    cursor: pointer;
 }
 .tab-css table td:hover,.tab-css table td:active {
-	background: #eee;
+    background: #eee;
 }
 .tab-css [type="radio"]:checked~[class$="menu"] {
-	display: block;
+    display: block;
 }
 .tab-css [type="radio"]:checked+label {
-	position: relative;
-	border: 1px solid #d1d1d1;
-	border-radius: 5px 5px 0 0 ;
-	border-bottom: none;
-	line-height: 30px;
-	z-index: 1; 
-	background: #fefefe;
+    position: relative;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px 5px 0 0 ;
+    border-bottom: none;
+    line-height: 30px;
+    z-index: 1; 
+    background: #fefefe;
 }
 .detail {
-	float: left;
-	width: 40%;
-	height: 350px;
-	padding-top: 0px;
-	border: 1px solid #ced1d4;
+    float: left;
+    width: 40%;
+    height: 350px;
+    padding-top: 0px;
+    border: 1px solid #ced1d4;
     border-radius: 2%;
     -moz-border-radius: 2%;
     -webkit-border-radius: 2%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	background: #fff;
-	overflow: hidden;
+    background: #fff;
+    overflow: hidden;
 }
 .detail ul {
-	padding: 20px;
-	list-style: none;
+    padding: 20px;
+    list-style: none;
 }
 .detail li {
-	width: 100%;
-	height: 44px;
-	margin-right: 0 auto;
-	border-bottom: 1px solid #d1d1d1;
-	overflow: hidden;
+    width: 100%;
+    height: 44px;
+    margin-right: 0 auto;
+    border-bottom: 1px solid #d1d1d1;
+    overflow: hidden;
 }
 .detail li span {
-	padding: 0 10px;
-	line-height: 20px;
-	color: #aaa;
+    padding: 0 10px;
+    line-height: 20px;
+    color: #aaa;
 }
 .detail li p {
-	padding: 0 10px;
-	line-height: 24px;
+    padding: 0 10px;
+    line-height: 24px;
 }
 .detail li:nth-child(3) {
-	height: 125px;
+    height: 125px;
 }
 .detail li div {
-	width: 66%;
-	float: left;
-	padding-left: 10px;
-	box-sizing: border-box;
+    width: 66%;
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	overflow: hidden;
+    overflow: hidden;
 }
 .detail li .small {
-	width: 33%;
-	box-sizing: border-box;
+    width: 33%;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	border-right: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
 }
 .detail input {
-	margin-top: 10px;
-	line-height: 20px;
-	border: 1px solid transparent;
-	border-radius: 2px;
+    margin-top: 10px;
+    line-height: 20px;
+    border: 1px solid transparent;
+    border-radius: 2px;
 }
 #k {
-	padding-left: 20px;
+    padding-left: 20px;
     margin-left: 10px;
     background: url(../images/gou.png) no-repeat 2px;
 }
 #button2 {
-	width: 2em;
-	float: right;
-	padding: 0 10px;
-	margin-right: 10px;
-	background: #2885b6;
-	color: #fff;
+    width: 2em;
+    float: right;
+    padding: 0 10px;
+    margin-right: 10px;
+    background: #2885b6;
+    color: #fff;
 }
 .market {
-	width: 90%;
-	margin: 0 auto 10px;
-	font-size: 0.8em;
-	overflow: hidden;
-	position: relative;
+    width: 90%;
+    margin: 0 auto 10px;
+    font-size: 0.8em;
+    overflow: hidden;
+    position: relative;
 }
 .calender {
-	width: 40%;
-	float: left;
+    width: 40%;
+    float: left;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	overflow: hidden;
-	background: #fff;
+    overflow: hidden;
+    background: #fff;
 }
 .calender .table {
-	padding: 20px;
-	padding-top: 15px;
-	border-color: #d1d1d1;
-	text-align: center;
-	color: #666;
+    padding: 20px;
+    padding-top: 15px;
+    border-color: #d1d1d1;
+    text-align: center;
+    color: #666;
 }
 .calender table caption {
-	padding-bottom: 10px;
-	line-height: 20px;
-	border-bottom: 1px solid #2885b6;
-	overflow: hidden;
+    padding-bottom: 10px;
+    line-height: 20px;
+    border-bottom: 1px solid #2885b6;
+    overflow: hidden;
 }
 .calender table caption label {
-	display: block;
-	float: left;
-	width: 24%;
-	margin-right: 1%;
-	box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 24%;
+    margin-right: 1%;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: 1px solid #d1d1d1;
     text-align: center;
 }
 .calender table caption label select {
-	width: 100%;
-	appearance: none;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	border: none;
-	background: #fff url(../images/select_down.png) no-repeat 90%;
-	color: #777;
-	cursor: pointer;
+    width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background: #fff url(../images/select-down.png) no-repeat 90%;
+    color: #777;
+    cursor: pointer;
 }
 .calender table caption label:first-child {
-	width: 23%;
+    width: 23%;
 }
 .calender table caption label:nth-child(2) {
-	width: 26%;
-	padding: 0 2%;
+    width: 26%;
+    padding: 0 2%;
 }
 .calender table caption label:nth-child(4) {
-	margin-right: 0;
+    margin-right: 0;
 }
 .calender table th,.calender table td {
-	width: 14.28%;
+    width: 14.28%;
     line-height: 20px;
-	box-sizing: border-box;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: 1px solid transparent;
@@ -656,31 +689,31 @@ ul.price li:nth-child(7):active p {
 }
 .calender table th {
     line-height: 30px;
-	border-collapse: collapse;
-	border-bottom: 1px solid #d1d1d1;
+    border-collapse: collapse;
+    border-bottom: 1px solid #d1d1d1;
 }
 .calender table .red {
-	color: #f04b4b;
+    color: #f04b4b;
 }
 .calender table .red p{
-	color: #666;
+    color: #666;
 }
 #button3 {
-	line-height: 18px;
-	border: 1px solid transparent;
-	border-radius: 2px;
-	background: #fff;
+    line-height: 18px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background: #fff;
 }
 .calender table .selected,
 .calender table td:hover,
 .calender table td:active {
-	border-color: #547cf3;
-	position: relative;
-	z-index: 1;
+    border-color: #547cf3;
+    position: relative;
+    z-index: 1;
 }
 .calender table th:hover,
 .calender table th:active {
-	background: #eee;
+    background: #eee;
 }
 .car {
     width: 59%;
@@ -693,86 +726,86 @@ ul.price li:nth-child(7):active p {
     border-radius: 5px;
 }
 .car .table2 {
-	width: 80%;
-	padding: 20px 0;
-	margin: 0 auto;
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
 }
 .table2 table {
-	width: 100%;
-	border-collapse: collapse;
-	border: 1px solid #d1d1d1;
-	text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d1d1d1;
+    text-align: center;
 }
 .table2 table th,.table2 table td {
-	line-height: 22px;
-	box-sizing: border-box;
+    line-height: 22px;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: 1px solid #d1d1d1;
     color: #333;
 }
 .table2 table td {
-	font-size: 0.9em;
-	overflow: hidden;
+    font-size: 0.9em;
+    overflow: hidden;
 }
 .table2 table td span {
-	float: left;
+    float: left;
 }
 .table2 table td .sw {
-	float: left;
-	margin: 10px;
+    float: left;
+    margin: 10px;
     width: 60%;
     height: 4px;
     background: #ccc;
 }
 .table2 table p {
-	height: 4px;
+    height: 4px;
 }
 .o-8 {
-	width: 80%;
-	background: #fe570a;
+    width: 80%;
+    background: #fe570a;
 }
 .o-7 {
-	width: 70%;
-	background: #f59d53;
+    width: 70%;
+    background: #f59d53;
 }
 .o-6 {
-	width: 60%;
-	background: #f59d53;
+    width: 60%;
+    background: #f59d53;
 }
 .b-5 {
-	width: 50%;
-	background: #6bbbe7;
+    width: 50%;
+    background: #6bbbe7;
 }
 .b-4 {
-	width: 40%;
-	background: #6bbbe7;
+    width: 40%;
+    background: #6bbbe7;
 }
 .b-3 {
-	width: 39%;
-	background: #6bbbe7;
+    width: 39%;
+    background: #6bbbe7;
 }
 .b-2 {
-	width: 35%;
-	background: #6bbbe7;
+    width: 35%;
+    background: #6bbbe7;
 }
 .b-1 {
-	width: 30%;
-	background: #6bbbe7;
+    width: 30%;
+    background: #6bbbe7;
 }
 .table2 tr th:first-child,
 .table2 tr td:first-child {
-	width: 15%;
+    width: 15%;
 }
 .table2 tr th:nth-child(2),
 .table2 tr td:nth-child(2) {
-	width: 20%;
+    width: 20%;
 }
 .table2 tr th:nth-child(3),
 .table2 tr td:nth-child(3) {
-	width: 65%;
-	text-align: left;
-	padding-left: 30px;
+    width: 65%;
+    text-align: left;
+    padding-left: 30px;
 }
 .table2 table tr:hover,.table2 table tr:active,
 /*即使设置了tr任然设置th和td是因为，th和td的background
@@ -780,6 +813,6 @@ ul.price li:nth-child(7):active p {
 覆盖tr*/
 .table2 table th:hover,.table2 table th:active,
 .table2 table td:hover,.table2 table td:active {
-	background: #eee;
-	cursor: pointer;
+    background: #eee;
+    cursor: pointer;
 }
