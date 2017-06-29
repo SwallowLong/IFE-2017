@@ -11,9 +11,17 @@
   <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
 
 <script type="text/javascript">
-
 function a() {
-  /*若是没有.value则表明调用的是这个节点，生成的为HTMLCollection对象，而如果没有input没有value特性，则无法获取输入值，而使用firstChild获得的只是null而已*/
+  var aqiInput = document.getElementById('aqi-input'),
+      aqiDisplay = document.getElementById('aqi-display');
+  aqiDisplay.innerHTML = aqiInput.value;
+}
+</script>
+</body>
+</html>
+<!--
+function a() {
+  //若是没有.value则表明调用的是这个节点，生成的为HTMLCollection对象，而如果没有input没有value特性，则无法获取输入值，而使用firstChild获得的只是null而已
   var x=document.getElementById('aqi-input').value;
   //y为text类型，可以用nodeValue获取文本节点内容
   var y=document.getElementById('aqi-display').firstChild;
@@ -22,7 +30,4 @@ function a() {
     y.nodeValue= x;
   }
 }
-
-</script>
-</body>
-</html>
+-->
