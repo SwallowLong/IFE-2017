@@ -16,6 +16,7 @@
 		}
 		}, false );
 		inright.addEventListener( "click", function() {
+			//text.value==""时，实际输入值为空，即什么都没输入，而不是输入""空字符串
 			if ( !isNaN( text.value ) && !text.value == "" ) {
 			var div = document.createElement( "div" );
 			var textNode = document.createTextNode( text.value );

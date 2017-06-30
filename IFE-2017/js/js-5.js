@@ -9,8 +9,9 @@
 		inLeft.addEventListener( "click", function() {
 			if ( myArray.length > 60 ) {
 				alert( "已到能输出上限" );
-			} else { 
-				if ( !isNaN(text.value) && !text.value == "" && text.value > 10 && text.value < 100 ) {
+			} else {
+				// 此处注意text.value是string类型被isNaN隐式转换了，所以输入"11"是不会执行的，因为此时返回的是"'11'"报错 
+				if ( !isNaN(text.value) && text.value > 10 && text.value < 100 ) {
 				var div = document.createElement( "div" );
 				div.style = "height:" + text.value + "px;" + "display: inline-block; padding: 10px; margin: 5px 1px; font-size: 14px; font-weight: bold; color: #fff; background-color: red;";
 				second.insertBefore( div, second.firstChild );
@@ -24,7 +25,7 @@
 			if ( myArray.length > 60 ) {
 				alert( "已到能输出上限" );
 			} else {
-				if ( !isNaN( text.value ) && !text.value == "" && text.value > 10 && text.value < 100 ) {
+				if ( !isNaN( text.value ) && text.value > 10 && text.value < 100 ) {
 				var div = document.createElement( "div" );
 				div.style = "height:" + text.value + "px;" + "display: inline-block; padding: 10px; margin: 5px 1px; font-size: 14px;font-weight: bold; color: #fff; background-color: red;";
 				second.appendChild( div );
