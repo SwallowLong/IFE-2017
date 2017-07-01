@@ -1,0 +1,51 @@
+label {
+	font-size: 20px;
+	font-weight: bold;
+	color: #000;
+}
+input {
+	width: 500px;
+	height: 50px;
+	margin-left: 20px;
+	font-size: 140%;
+	outline: none;
+	border-radius: 10px;
+	border: 1px solid #ababab;
+	color: #ababab;
+}
+#tgreen {
+	color: #0f0;
+	border-color: #0f0;
+}
+#tred {
+	border-color: #f00;
+}
+#tgray {
+	color: #ababab;
+	border-color: #ababab;
+}
+#btn {
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+	color: #fff;
+	background: #7282f5;
+}
+#gray {
+	margin-left: 70px;
+	font-size: 20px; 
+	color: #ababab;
+	border-color: #ababab;
+}
+#red {
+	margin-left: 70px;
+	font-size: 20px;
+	color: #f00;
+	border-color: #f00;
+}
+#green {
+	margin-left: 70px;
+	font-size: 20px;
+	color: #0f0;
+	border-color: #0f0;
+}
