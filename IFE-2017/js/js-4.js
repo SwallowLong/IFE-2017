@@ -4,7 +4,7 @@
 		inright = document.getElementById( "inright" ),
 		outleft = document.getElementById( "outleft" ),
 		outright = document.getElementById( "outright" );
-		inleft.addEventListener( "click", function() {
+		EventUtil.addHandler( inleft, "click", function() {
 			if ( !isNaN(text.value) && !text.value == "" ) {
 			var div = document.createElement( "div" );
 			var textNode = document.createTextNode( text.value );
@@ -15,7 +15,7 @@
 			alert( "请输入数字" );
 		}
 		}, false );
-		inright.addEventListener( "click", function() {
+		EventUtil.addHandler( inright, "click", function() {
 			//text.value==""时，实际输入值为空，即什么都没输入，而不是输入""空字符串
 			if ( !isNaN( text.value ) && !text.value == "" ) {
 			var div = document.createElement( "div" );
@@ -27,11 +27,11 @@
 			alert( "请输入数字" );
 		}
 		}, false );
-		outleft.addEventListener( "click", function() {
+		EventUtil.addHandler( outleft, "click", function() {
 			var a = second.removeChild( second.firstChild );
 			alert(a.firstChild.nodeValue);
 		}, false );
-		outright.addEventListener( "click", function() {
+		EventUtil.addHandler( outright, "click", function() {
 			var a = second.removeChild( second.lastChild );
 			alert(a.firstChild.nodeValue);
 		}, false );

@@ -6,7 +6,7 @@
 		outLeft = document.getElementById( "outleft" ),
 		outRight = document.getElementById( "outright" ),
 		mySort = document.getElementById( "mysort" );
-		inLeft.addEventListener( "click", function() {
+		EventUtil.addHandler( inLeft, "click", function() {
 			if ( myArray.length > 60 ) {
 				alert( "已到能输出上限" );
 			} else {
@@ -22,7 +22,7 @@
 			}
 		}
 		}, false );
-		inRight.addEventListener( "click", function() {
+		EventUtil.addHandler( inRight, "click", function() {
 			if ( myArray.length > 60 ) {
 				alert( "已到能输出上限" );
 			} else {
@@ -37,17 +37,17 @@
 			}
 	    }
 		}, false );
-		outLeft.addEventListener( "click", function() {
+		EventUtil.addHandler( outLeft, "click", function() {
 			var a = second.removeChild( second.firstChild );
 			alert( myArray[0] );
 			myArray.splice( 0, 1 );
 		}, false );
-		outRight.addEventListener( "click", function() {
+		EventUtil.addHandler( outRight, "click", function() {
 			var a = second.removeChild( second.lastChild );
 			alert( myArray[myArray.length-1] );
 			myArray.splice( myArray.length-1, 1);
 		}, false );
-		mySort.addEventListener( "click", function() {
+		EventUtil.addHandler(mySort, "click", function() {
 			function compare( a, b ) {
 				if ( a - b < 0 ) {
 					return -1;
