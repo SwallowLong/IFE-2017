@@ -9,6 +9,14 @@ input {
 	border: 1px solid #ddd;
 	background: transparent;
 }
-input[name="shift"] {
+input[name="outleft"] {
 	margin-left: 20px;
+}
+.inner {
+	display: inline-block;
+	padding: 10px;
+	margin: 5px 1px;
+	font-size: 14px;
+	font-weight: bold; color: #fff;
+	background-color: red;
 }

@@ -8,7 +8,7 @@
 			if ( !isNaN(text.value) && !text.value == "" ) {
 			var div = document.createElement( "div" );
 			var textNode = document.createTextNode( text.value );
-			div.style = "display: inline-block; padding: 10px; margin: 5px; font-size: 14px; font-weight: bold; color: #fff; background-color: red;"
+			div.className = "inner";
 			div.appendChild( textNode );
 			second.insertBefore( div, second.firstChild );
 		} else {
@@ -20,7 +20,7 @@
 			if ( !isNaN( text.value ) && !text.value == "" ) {
 			var div = document.createElement( "div" );
 			var textNode = document.createTextNode( text.value );
-			div.style = "display: inline-block; padding: 10px; margin: 5px; font-size: 14px;font-weight: bold; color: #fff; background-color: red;"
+			div.className = "inner";
 			div.appendChild( textNode );
 			second.appendChild( div, second.firstChild );
 		} else {

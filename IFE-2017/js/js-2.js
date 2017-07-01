@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>IFE JavaScript Task 01</title>
-  </head>
-<body>
-
-  <h3>污染城市列表</h3>
-  <ul id="aqi-list">
-<!--   
-    <li>第一名：福州（样例），10</li>
-      <li>第二名：福州（样例），10</li> -->
-  </ul>
-
-<script type="text/javascript">
-
 var aqiData = [
   ["北京", 90],
   ["上海", 50],
@@ -47,7 +30,3 @@ var aqiData = [
     ul.appendChild( li );
   }
 })();
-
-</script>
-</body>
-</html>

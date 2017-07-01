@@ -13,7 +13,8 @@
 				// 此处注意text.value是string类型被isNaN隐式转换了，所以输入"11"是不会执行的，因为此时返回的是"'11'"报错 
 				if ( !isNaN(text.value) && text.value > 10 && text.value < 100 ) {
 				var div = document.createElement( "div" );
-				div.style = "height:" + text.value + "px;" + "display: inline-block; padding: 10px; margin: 5px 1px; font-size: 14px; font-weight: bold; color: #fff; background-color: red;";
+				div.className = "inner";
+				div.style = "height:" + text.value + "px;"
 				second.insertBefore( div, second.firstChild );
 				myArray.unshift( text.value );
 			} else {
@@ -27,7 +28,8 @@
 			} else {
 				if ( !isNaN( text.value ) && text.value > 10 && text.value < 100 ) {
 				var div = document.createElement( "div" );
-				div.style = "height:" + text.value + "px;" + "display: inline-block; padding: 10px; margin: 5px 1px; font-size: 14px;font-weight: bold; color: #fff; background-color: red;";
+				div.className = "inner";
+				div.style = "height:" + text.value + "px;";				
 				second.appendChild( div );
 				myArray.push( text.value );
 			} else {
@@ -58,7 +60,9 @@
 			myArray = myArray.sort( compare );
 			for (var i=0; i<myArray.length; i++) {
 				var div = document.createElement( "div" );
-				div.style = "height:" + myArray[i] + "px;" + "display: inline-block; padding: 10px; margin: 5px 1px; font-size: 14px;font-weight: bold; color: #fff; background-color: red;";
+				div.className = "inner";
+				div.style = "height:" + myArray[i] + "px;";				
+
 				second.appendChild( div );
 				second.removeChild( second.firstChild );
 			}
