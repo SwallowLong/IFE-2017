@@ -49,3 +49,9 @@ input {
 	color: #0f0;
 	border-color: #0f0;
 }
+#red1 {
+	margin-left: 70px;
+	font-size: 20px;
+	color: #f00;
+	border-color: #f00;
+}
