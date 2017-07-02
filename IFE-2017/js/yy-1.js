@@ -2,9 +2,7 @@ btn.addEventListener( "click", function() {
 	var btn = document.getElementById("btn"),
 	input = document.getElementsByClassName("t")
 	bottom = document.getElementsByClassName("bottom");
-	var re = new RegExp ("[^\\x00-\\xff]+","g");
-	var reChina = new RegExp ("[\\u4E00-\\u9FFF]+","g");
-	if ( re.test(input[0].value) && !reChina.test(input[0].value) ) {
+	if ( findChinaChar(input[0].value) ) {
 		bottom[0].innerHTML = "不能输入中文符号"; 
 		bottom[0].id = "red1"
 		input[0].id = "tred";
