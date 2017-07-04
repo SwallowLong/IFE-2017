@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单联动</title>
+	<link rel="stylesheet" type="text/css" href="../css/yy-3.css">
+</head>
+<body>
+	<form>
+		<fieldset>
+			<div id="ra">
+				<label for="inschool">
+					<input type="radio" name="student" id="inschool" value="inschool" checked="checked">在校生
+				</label>
+				<label for="outschool">
+					<input type="radio" name="student" id="outschool" value="outschool">非在校生
+				</label>
+			</div>
+			<div id="instudy">
+				<label for="city">学校</label>
+				<select id="city" name="city">
+					<option value="bj">北京</option>
+					<option value="sh">上海</option>
+					<option value="hz" selected="selected">杭州</option>
+				</select>
+				<label for="school"></label>
+				<select id="school" name="school">
+					<option value="bj">北京大学</option>
+					<option value="sh">复旦大学</option>
+					<option value="zj" selected="selected">浙江大学</option>
+				</select>
+			</div>
+			<div id="nostudy" class="hide">
+				<label for="work">就业单位</label>
+				<input type="text" name="work" id="work" value="">
+			</div>
+		</fieldset>
+	</form>
+	<script type="text/javascript" src="../js/yy-3.js"></script>
+</body>
+</html>

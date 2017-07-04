@@ -1,7 +1,7 @@
-btn.addEventListener( "click", function() {
-	var btn = document.getElementById("btn"),
+var btn = document.getElementById("btn"),
 	input = document.getElementsByClassName("t")
 	bottom = document.getElementsByClassName("bottom");
+btn.addEventListener( "click", function() {
 	if ( findChinaChar(input[0].value) ) {
 		bottom[0].innerHTML = "不能输入中文符号"; 
 		bottom[0].id = "red1"

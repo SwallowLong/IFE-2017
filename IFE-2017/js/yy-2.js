@@ -25,7 +25,7 @@ for (let i=0; i<myArray.length; i++) {
 	}, false )
 	myArray[i].addEventListener( "blur", function() {
 		var myValue = myArray[i].value.replace(/[\u4E00-\u9FFF]/g,"aa"),
-		regArray = [ !findChinaChar(myArray[i].value) && myValue.length >= 4 && myValue.length <= 14, /^[a-zA-Z\d_]{8,16}$/g.test(myArray[i].value), myArray[2].value == myArray[1].value && myArray[1].value.length > 0, /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/g.test(myArray[i].value), /^[1][358][0-9]{9}$/g.test(myArray[i].value) ],
+		regArray = [ !findChinaChar(myArray[i].value) && myValue.length >= 4 && myValue.length <= 14, /^[a-zA-Z\d_]{8,16}$/g.test(myArray[i].value), myArray[2].value == myArray[1].value && myArray[1].value.length > 0, /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/g.test(myArray[i].value), /^[1][3578][0-9]{9}$/g.test(myArray[i].value) ],
 		myDiv = cleanSpace(div[i])[2],
 		trueArray = [ "名称格式正确", "密码可用", "密码输入一致", "邮箱可用", "手机格式正确"],
 		spaceArray = [ "名称", "密码", "密码", "邮箱", "手机号码"]
