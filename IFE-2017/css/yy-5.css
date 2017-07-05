@@ -1,0 +1,77 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#box {
+	width: 50%;
+	margin: auto;
+}
+table {
+	border-collapse: collapse;
+	position: relative;
+}
+td {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border: 1px solid #676767;
+}
+tr:first-child td {
+	border: none;
+	border-bottom: 2px solid #676767;
+}
+tr:first-child td:first-child {
+	border: none;
+}
+td:first-child {
+	border: none;
+	border-right: 2px solid #676767;
+}
+tr:last-child td {
+	border-bottom: 2px solid #676767;
+}
+tr:last-child td:first-child {
+	border-bottom: none;
+}
+td:last-child {
+	border-right: 2px solid #676767;
+}
+form {
+	margin: 10px 40px;
+}
+input {
+	height: 30px;
+	border: 1px solid #b8b8b8;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	outline: none;
+}
+#text {
+	width: 160px;
+}
+#btn {
+	width: 50px;
+	background: transparent;
+}
+#red {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	background: #f00;
+	overflow: hidden;
+	/*只是过渡不改变属性值*/
+	transition: all 1s;
+}
+#blue {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	height: 5px;
+	width: 40px;
+	background: blue;
+}
