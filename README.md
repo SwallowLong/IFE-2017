@@ -24,3 +24,5 @@
 [任务三：表单（三）联动](https://swallowlong.github.io/IFE-2017/IFE-2017/html/yy-3.html)</br>
 [任务四：听指令的小方块（一）](https://swallowlong.github.io/IFE-2017/IFE-2017/html/yy-4.html)</br>
 [任务五：听指令的小方块（二）](https://swallowlong.github.io/IFE-2017/IFE-2017/html/yy-5.html)</br>
+### 百度糯米学院
+[3D轮播图](https://swallowlong.github.io/IFE-2017/IFE-2017/html/nm-lbt.html)</br>
