@@ -2,13 +2,20 @@ var tr = document.getElementsByTagName("tr"),
 text = document.getElementById("text"),
 btn = document.getElementById("btn"),
 red = document.getElementById("red");
+//x、y为当输入为坐标的时候的x值与y值
 var x = 5,
 y = 5,
+//小方块旋转的2D的旋转角度为90*a
 a = 0,
+//b为(a % 4 + 4) % 4，a%4用来判断此时小方块的方向，由于可能出现-1与3、-3与1代表的方向相同
+//所以+4在进行求余
 b,
+//c小方块y轴上的移动格数
 c = 0,
+//d小方块x轴方向的移动格数
 d = 0;
 btn.addEventListener( "click", function() {
+	//当输入值为x,y时，相应的判断以使及小方块跳到该坐标
 	if ( /[\d]{1,2}[,][\d]{1,2}/.test(text.value) ) {
 		x = Number(text.value.split(",")[0]),
 		y = Number(text.value.split(",")[1]);
@@ -17,6 +24,7 @@ btn.addEventListener( "click", function() {
 			d = y-5;
 		}		
 	}
+	//输入特定指定时的小方块
 	if ( text.value.toUpperCase() == "GO") {
 		//求余的方法的到方向
 		b = (a % 4 + 4) % 4;
@@ -36,50 +44,51 @@ btn.addEventListener( "click", function() {
 			break;	
 		}
 	} else {
-		switch(true) {
-			case text.value.toUpperCase() == "TUN LEF":
+		switch(text.value.toUpperCase()) {
+			case "TUN LEF":
 				--a;
 				break;
-			case text.value.toUpperCase() == "TUN RIG":
+			case "TUN RIG":
 				++a;
 				break;
-			case text.value.toUpperCase() == "TUN BAC":
+			case "TUN BAC":
 				a += 2;
 				break;
-			case text.value.toUpperCase() == "TRA LEF":
+			case "TRA LEF":
 				--d;
 				break;
-			case text.value.toUpperCase() == "TRA TOP":
+			case "TRA TOP":
 				--c;
 				break;
-			case text.value.toUpperCase() == "TRA RIG":
+			case "TRA RIG":
 				++d;
 				break;
-			case text.value.toUpperCase() == "TRA BOT":
+			case "TRA BOT":
 				++c;
 				break;
-			case text.value.toUpperCase() == "MOV LEF":
+			case "MOV LEF":
+				//当输入MOV类指令时，先更改a另其旋转，然后通过超时调用将其旋转和移动分隔开
 				setTimeout(function() {
 					--d;
 					red.style  = "transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -ms-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -moz-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -webkit-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);";
 				},1000);
 				a = -1;
 				break;
-			case text.value.toUpperCase() == "MOV TOP":
+			case "MOV TOP":
 				setTimeout(function() {
 					--c;
 					red.style  = "transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -ms-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -moz-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -webkit-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);";
 				},1000);
 				a = 0;
 				break;
-			case text.value.toUpperCase() == "MOV RIG":				
+			case "MOV RIG":				
 				setTimeout(function() {
 					++d;
 					red.style  = "transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -ms-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -moz-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -webkit-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);";
 				},1000);
 				a = 1;
 				break;
-			case text.value.toUpperCase() == "MOV BOT":				
+			case "MOV BOT":				
 				setTimeout(function() {
 					++c;
 					red.style  = "transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -ms-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -moz-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -webkit-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);";
@@ -90,8 +99,6 @@ btn.addEventListener( "click", function() {
 				break;
 		}
 	}
-	
-
 	//CSS3的transform属性判断移动坐标以及旋转角度
 	red.style  = "transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -ms-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -moz-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -webkit-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);";
 }, false )

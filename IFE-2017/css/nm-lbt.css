@@ -1,10 +1,7 @@
-/*CSS reset*/
+﻿/*CSS reset*/
 * {
   padding: 0;
   margin: 0;
-}
-body {
-  background: #222;
 }
 /*@keyframes、animation用来完成循环动画的设置*/
 /*@keyframes设置动画过程*/
@@ -57,12 +54,7 @@ animation用来动画完成时间 完成那个动画 循环次数
   margin: auto;
   width: 1000px;
   height: 500px;
-  /*脱离文档流与块居中*/
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   -webkit-perspective: 1000px;
   background-color: #fff;
 }
