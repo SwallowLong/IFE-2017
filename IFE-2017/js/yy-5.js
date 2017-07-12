@@ -29,9 +29,13 @@ btn.addEventListener( "click", function() {
 	if ( text.value.toUpperCase() == "GO") {
 		//求余的方法的到方向
 		b = (a % 4 + 4) % 4;
-		//通过c、d判断出移动坐标，上则top减小即--c，左则left减小即--d
+		//通过c、d判断出移动坐标，往上则top减小即--c，往左则left减小即--d
 		switch (b) {
 			case 0:
+            //不管方块如何移动
+            //由于往上与左只能移动4格 所以c>-4,d>-4
+            //同理往下与右可以移动5格 所以c<5,d<5
+            //小于5而不是6是因为当c、d === 4 的时候++c、++d分别可以取到5
             if ( c > -4 ) {
                 --c;
             }
@@ -86,28 +90,36 @@ btn.addEventListener( "click", function() {
 			case "MOV LEF":
 				//当输入MOV类指令时，先更改a另其旋转，然后通过超时调用将其旋转和移动分隔开
 				setTimeout(function() {
-					--d;
+					if ( d > -4 ) {
+                        --d;
+                    }
 					red.style  = "transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -ms-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -moz-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -webkit-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);";
 				},1000);
 				a = -1;
 				break;
 			case "MOV TOP":
 				setTimeout(function() {
-					--c;
+					if ( c > -4 ) {
+                        --c;
+                    }
 					red.style  = "transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -ms-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -moz-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -webkit-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);";
 				},1000);
 				a = 0;
 				break;
 			case "MOV RIG":				
 				setTimeout(function() {
-					++d;
+					if ( d < 5 ) {
+                        ++d;
+                    }
 					red.style  = "transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -ms-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -moz-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -webkit-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);";
 				},1000);
 				a = 1;
 				break;
 			case "MOV BOT":				
 				setTimeout(function() {
-					++c;
+					if ( c < 5 ) {
+                        ++c; 
+                    }
 					red.style  = "transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -ms-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -moz-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);" + " -webkit-transform: translate(" + 40*d + "px, " + 40*c +"px) rotate(" + 90*a + "deg);";
 				},1000);
 				a = 2;
