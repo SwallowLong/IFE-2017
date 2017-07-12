@@ -1,0 +1,92 @@
+//页面中内容块的容器模板
+.div {
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid #aeaeae;
+	background: #fff;
+	box-shadow: 1px 1px 1px #aeaeae;
+	border-radius: 10px;
+}
+body {
+	margin: 0 35px;
+	font-size:15px;
+	font-family: "Microsoft Yahei",serif;
+	vertical-align: bottom;
+	background-color: #1d1d1d;
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		list-style: none;
+	}
+	/*出body外包含所有元素的最外层box*/
+	.wrapper {
+		overflow: hidden;
+    	background:#2c2c2c;
+        /*顶部的链接块*/
+   		nav {
+	    	overflow: hidden;
+	    	background: #000;
+        	h1 {
+	        	float: left;
+	        	color: #fff;
+	        	padding-top: 15px;
+            	padding-left: 20px;
+        	}
+        	ul {
+	        	float: right;
+            	vertical-align: bottom;
+	        	list-style-type: disc;
+            	li {
+	            	float: left;
+	            	padding:20px;
+                	a {
+	                	float: left;
+	                	display: block;
+	                	color: #fff;
+	                	text-align: center;
+	                	text-decoration: none;
+                    	&:hover {
+	                    	font-weight: bold;
+                	    	opacity: 0.4;
+                    	}
+                	}
+            	}
+        	}
+    	}
+    	.concent {
+	   		padding: 10px;
+	    	margin: 0px;
+	    	background-color: #f0f0f0;
+        	.first {
+	        	.div;
+        	}
+        	.second {
+	        	.div;
+        	}
+        	.third {
+	        	.div;
+        	}
+        	.four {
+	        	.div;
+        	}
+       		aside {
+	        	.div;
+            	/*这里以后会用作侧栏*/
+            	fieldset {
+	            	border-color: transparent;
+            	}
+        	}
+    	}
+    	footer {
+	    	position: absolute;
+	    	left: 35px;
+	    	right: 35px;
+        	padding: 20px;
+	    	color: #fff;
+	    	background: #000;
+	    	text-align: center;
+    	}
+	}
+}
