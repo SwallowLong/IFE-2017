@@ -15,11 +15,12 @@ c = 0,
 //d小方块x轴方向的移动格数
 d = 0;
 btn.addEventListener( "click", function() {
-	//当输入值为x,y时，相应的判断以使及小方块跳到该坐标
+	//当输入值为x,y时，相应的正则判断
 	if ( /[\d]{1,2}[,][\d]{1,2}/.test(text.value) ) {
 		x = Number(text.value.split(",")[0]),
 		y = Number(text.value.split(",")[1]);
 		if ( x > 0 && x < 11 && y > 0 && y < 11 ) {	
+            //利用x,y与默认坐标5,5的差值重新赋值c、d 从而达到移动到相应坐标的目的
 			c = x-5;
 			d = y-5;
 		}		
@@ -31,16 +32,24 @@ btn.addEventListener( "click", function() {
 		//通过c、d判断出移动坐标，上则top减小即--c，左则left减小即--d
 		switch (b) {
 			case 0:
-			--c;
+            if ( c > -4 ) {
+                --c;
+            }
 			break;
 			case 1:
-			++d;
+            if ( d < 5 ) {
+                ++d;
+            }
 			break;
-			case 2:		
-			++c;
+			case 2:	
+            if ( c < 5 ) {
+               ++c; 
+            }	
 			break;
 			default:
-			--d;
+            if ( d > -4 ) {
+                --d;
+            }
 			break;	
 		}
 	} else {
@@ -55,16 +64,24 @@ btn.addEventListener( "click", function() {
 				a += 2;
 				break;
 			case "TRA LEF":
-				--d;
+				if ( d > -4 ) {
+                --d;
+            }
 				break;
 			case "TRA TOP":
-				--c;
+				if ( c > -4 ) {
+                --c;
+            }
 				break;
 			case "TRA RIG":
-				++d;
+				if ( d < 5 ) {
+                ++d;
+            }
 				break;
 			case "TRA BOT":
-				++c;
+				if ( c < 5 ) {
+               ++c; 
+            }
 				break;
 			case "MOV LEF":
 				//当输入MOV类指令时，先更改a另其旋转，然后通过超时调用将其旋转和移动分隔开
