@@ -65,6 +65,7 @@ html body .stage .cube div {
   background: linear-gradient(to rigiht, rgba(54, 226, 248, 0.5) 2px, rgba(0, 0, 0, 0) 2px), linear-gradient(to rigiht, rgba(54, 226, 248, 0.5) 2px, rgba(0, 0, 0, 0) 2px);
   background: -webkit-linear-gradient(left, rgba(54, 226, 248, 0.5) 2px, rgba(0, 0, 0, 0) 2px), -webkit-linear-gradient(top, rgba(54, 226, 248, 0.5) 2px, rgba(0, 0, 0, 0) 2px);
   background-size: 5em 5em;
+  background-color: rgba(0, 0, 0, 0.5);
   border-right: 2px solid rgba(54, 226, 248, 0.5);
   border-bottom: 2px solid rgba(54, 226, 248, 0.5);
 }
