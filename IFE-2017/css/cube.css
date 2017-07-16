@@ -1,0 +1,88 @@
+/* 此处的html是为了使body的height：100%起作用 否则body的height：100%任然为0*/
+.box {
+  width: 100%;
+  height: 100%;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+html * {
+  padding: 0;
+  margin: 0;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  /* 设置整个页面的背景色 */
+  background: -webkit-radial-gradient(#217345, #0e0e0e);
+  /* 设置魔方旋转的、透视的舞台 */
+}
+html body .stage {
+  width: 20em;
+  height: 20em;
+  /* left、top相对的点为(0,0) 所以利用transform的translate属性达到居中的目的 */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  /* 设置透视使3D效果 */
+  perspective: 1000px;
+  /* 设置旋转的动画的关键帧 */
+  /* 设置魔方的旋转动画 */
+}
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+html body .stage .cube {
+  width: 100%;
+  height: 100%;
+  /* 继承3d属性 且给定一个初始角度 */
+  transform: rotateX(-20deg) rotateY(-20deg);
+  -webkit-transform: rotateX(-20deg) rotateY(-20deg);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  /* 设置动画的属性 */
+  animation: spin 6s ease 0s infinite;
+  -moz-animation: spin 6s ease 0s infinite;
+  -webkit-animation: spin 6s ease 0s infinite;
+  /* 6个面通用的属性 */
+  /* 每个面转动相应的角度后 沿着Z轴移动width/2 形成立方体 */
+}
+html body .stage .cube div {
+  width: 100%;
+  height: 100%;
+  /* 脱离文档流 */
+  position: absolute;
+  background: linear-gradient(to rigiht, rgba(54, 226, 248, 0.5) 2px, rgba(0, 0, 0, 0) 2px), linear-gradient(to rigiht, rgba(54, 226, 248, 0.5) 2px, rgba(0, 0, 0, 0) 2px);
+  background: -webkit-linear-gradient(left, rgba(54, 226, 248, 0.5) 2px, rgba(0, 0, 0, 0) 2px), -webkit-linear-gradient(top, rgba(54, 226, 248, 0.5) 2px, rgba(0, 0, 0, 0) 2px);
+  background-size: 5em 5em;
+  border-right: 2px solid rgba(54, 226, 248, 0.5);
+  border-bottom: 2px solid rgba(54, 226, 248, 0.5);
+}
+html body .stage .cube .front {
+  transform: translateZ(10em);
+}
+html body .stage .cube .behind {
+  transform: translateZ(-10em);
+}
+html body .stage .cube .right {
+  transform: rotateY(90deg) translateZ(10em);
+}
+html body .stage .cube .left {
+  transform: rotateY(-90deg) translateZ(10em);
+}
+html body .stage .cube .top {
+  transform: rotateX(90deg) translateZ(10em);
+}
+html body .stage .cube .bottom {
+  transform: rotateX(-90deg) translateZ(10em);
+}
