@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <script language="javascript" type="text/javascript">
         var cache = {};
+        // exports出口
         (function (exports) {
             function Cube(opts) {
                 opts = opts || {};
@@ -17,6 +18,7 @@
                 this.face = opts.face;
                 this.row = opts.row;
                 this.column = opts.column;
+                // 光标相对于目标元素的边界的坐标
                 this.offsetX = this.column * (this.width + opts.marginX); //
                 this.offsetY = this.row * (this.height + opts.marginY);//
                 this.offsetZ = this.face * (this.cubZ + opts.marginZ);//
@@ -24,9 +26,11 @@
                 this.negativeZ = -this.cubZ / 2;
                 this.cubFaceInfo = opts.cubFaceInfo;
                 this.dimension = opts.dimension;
+                // 时间相对视口的坐标
                 this.centerX = (this.dimension * this.width + (this.dimension - 1) * opts.marginX) / 2;
                 this.centerY = (this.dimension * this.height + (this.dimension - 1) * opts.marginY) / 2;
                 this.centerZ = (this.dimension * this.cubZ + (this.dimension - 1) * opts.marginZ) / 2;
+
                 this.translateX = this.offsetX - this.centerX; //把中心点设为原点
                 this.translateY = this.offsetY - this.centerY; //
                 this.translateZ = this.cubZ / 2 + this.offsetZ - this.centerZ; //offsetZ按上面计算应该跟x,y在一个平面上即后面，但实际上由于要形成立方体，在Z轴上已经后退了cubZ/2个距离，故为和上面保持一致在一个面上，这里需要再加回cubZ/2个距离，使默认的xyz原点都在一个平面上即立方体后面左上角三维坐标系，以这个点作为参考点平移和设置旋转原点
@@ -345,7 +349,7 @@
                             this.rotateBox(this.angle, record.rotateFace, dimensionIndex, getFaceFun.call(this, dimensionIndex)); //反向转动90
                         }
                         else {
-                            this.cubeRotateStatus.push(0);
+                            this.cubeRotateStatus.push(0); 
                         }
                     }
                     setTimeout(this.timerFun, 100);

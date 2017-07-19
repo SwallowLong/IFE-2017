@@ -1,0 +1,103 @@
+html {
+    background: #86a686;
+}
+.assembly {
+    transform: rotateX(-35.26deg) rotateY(45deg);
+}
+.assembly,
+.assembly * {
+    position: absolute;
+    top: 50%;
+    /* excludes IE up to & incl. 11 */
+    
+    left: 50%;
+    transform-style: preserve-3d;
+}
+.switcher {
+    animation: switch 2.1s steps(1, end) infinite;
+}
+@keyframes switch {
+    33.333% {
+        transform: rotateY(90deg);
+    }
+    66.667% {
+        transform: rotate(90deg);
+    }
+}
+.part:nth-child(1) {
+    transform: translate(2.75em);
+    animation: split1 0.35s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+}
+@keyframes split1 {
+    0%, 10% {
+        transform: translate(2.7775em);
+    }
+    90%,
+    100% {
+        transform: translate(3.3em);
+    }
+}
+.part:nth-child(2) {
+    transform: translate(0em);
+    animation: split2 0.35s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+    animation-duration: 0.7s;
+    animation-direction: reverse;
+}
+@keyframes split2 {
+    0%, 15% {
+        transform: rotateX(0deg);
+    }
+    85%,
+    100% {
+        transform: rotateX(90deg);
+    }
+}
+.part:nth-child(2) .face {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+.part:nth-child(3) {
+    transform: translate(-2.75em);
+    animation: split3 0.35s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;
+}
+@keyframes split3 {
+    0%, 10% {
+        transform: translate(-2.7775em);
+    }
+    90%,
+    100% {
+        transform: translate(-3.3em);
+    }
+}
+.face {
+    margin: -4.125em -1.375em;
+    width: 2.75em;
+    height: 8.25em;
+    background: linear-gradient(#d9d9e4 33.333%, #26261a 33.333%, #26261a 66.667%, #d9d9e4 66.667%);
+}
+.face:nth-child(1) {
+    transform: rotateX(0deg) translateZ(4.125em);
+}
+.face:nth-child(2) {
+    transform: rotateX(90deg) translateZ(4.125em);
+}
+.face:nth-child(3) {
+    transform: rotateX(180deg) translateZ(4.125em);
+}
+.face:nth-child(4) {
+    transform: rotateX(270deg) translateZ(4.125em);
+}
+.face:nth-child(5) {
+    margin: -4.125em;
+    width: 8.25em;
+    transform: rotateY(90deg) translateZ(1.375em);
+    background: linear-gradient(#26261a 33.333%, #d9d9e4 33.333%, #d9d9e4 66.667%, #26261a 66.667%) 50% 50% no-repeat, linear-gradient(#d9d9e4 33.333%, #26261a 33.333%, #26261a 66.667%, #d9d9e4 66.667%);
+    background-size: 33.333% 100%, 100% 100%;
+}
+.face:nth-child(6) {
+    margin: -4.125em;
+    width: 8.25em;
+    transform: rotateY(-90deg) translateZ(1.375em);
+    background: linear-gradient(#26261a 33.333%, #d9d9e4 33.333%, #d9d9e4 66.667%, #26261a 66.667%) 50% 50% no-repeat, linear-gradient(#d9d9e4 33.333%, #26261a 33.333%, #26261a 66.667%, #d9d9e4 66.667%);
+    background-size: 33.333% 100%, 100% 100%;
+}
