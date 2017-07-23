@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 将数据和DOM绑定 -->
+    <div id="app">
+        {{message}}
+    </div>
+
+    <!-- 采用v-bind:设置vue的特别熟悉 -->
+    <!-- 即可用通过改变message来改变title的值 且在浏览器中v-bind:是看不见的 -->
+    <div id="app-2">
+        <span v-bind:title="message">
+            ni hao 
+        </span>
+    </div>
+
+    <!-- 设置DOM的结构,通过seen的布尔赋值，达到p标签文本内容的可见性 -->
+    <div id="app-3">
+        <p v-if="seen">
+            now you can see
+        </p>
+    </div>
+
+    <!-- 用来绑定数据到数据来渲染一个列表 -->
+    <!-- 即可用生成lists中length的个的列表 -->
+    <div id="app-4">
+        <ol>
+            <li v-for="key in lists">
+                {{key.text}}
+            </li>
+        </ol>
+    </div>
+    
+    <!-- v-on用来绑定监听事件 -->
+    <div id="app-5">
+        <p>{{message}}</p>
+        <button v-on:click="reverseMessage">reverseMessage</button>
+    </div>
+
+    <!-- 通过v-model实现实现双向数据绑定 -->
+    <div id="app-6">
+        <p>{{message}}</p>
+        <input type="text" v-model="message">
+    </div>
+
+    <!-- 在模板中引用定义的实例 任然需要将其new Vue否则无效果 -->
+    <div id="app-7">
+        <ul>
+            <todo-items></todo-items>
+        </ul>
+    </div>
+
+    <!-- 在模板中引用定义的实例 但不相同 -->
+    <div id="app-8">
+        <ol>
+            <todo-item v-for="item in list" v-bind:todo="item"></todo-item>
+        </ol>
+    </div>
+    <!-- 对于vue的引用 -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="../js/vue.js"></script>
+</body>
+</html>
